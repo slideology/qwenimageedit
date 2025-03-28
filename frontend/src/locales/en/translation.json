@@ -1,0 +1,273 @@
+{
+  "header": {
+    "home": "Home",
+    "generator": "Image Generator",
+    "gallery": "Gallery",
+    "about": "About Us",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "hero": {
+    "title": "Ghibli AI Image Generator",
+    "description": "Create artwork in the true Ghibli style that captures Miyazaki's unique artistic vision. Easily convert photos or generate stunning Ghibli-style images from text descriptions.",
+    "startCreating": "Start Creating",
+    "browseGallery": "Browse Gallery"
+  },
+  "features": {
+    "title": "Why Choose Ghibli AI",
+    "description": "Ghibli AI is revolutionizing how fans create Studio Ghibli style art. Our advanced AI technology captures Miyazaki's unique artistic vision, bringing the magic of Ghibli to your fingertips.",
+    "feature1": {
+      "title": "Authentic Ghibli Style",
+      "description": "Generate images that truly capture the iconic Ghibli aesthetics using our specialized AI models."
+    },
+    "feature2": {
+      "title": "User-Friendly Interface",
+      "description": "Simple and intuitive design makes creating Ghibli-style art accessible to everyone, regardless of artistic ability."
+    },
+    "feature3": {
+      "title": "Creative Flexibility",
+      "description": "Transform any concept into magical Miyazaki-style illustrations with precise control over artistic elements."
+    }
+  },
+  "howToUse": {
+    "title": "Getting Started with Ghibli AI",
+    "description": "Create beautiful Ghibli-style artwork in three simple steps",
+    "step1": {
+      "title": "Describe Your Vision",
+      "description": "Enter a detailed description of the Ghibli-style scene or character you want to create, or upload a photo for conversion."
+    },
+    "step2": {
+      "title": "Customize Your Style",
+      "description": "Adjust settings to match specific Miyazaki film aesthetics like 'Spirited Away', 'My Neighbor Totoro', or 'Howl's Moving Castle'."
+    },
+    "step3": {
+      "title": "Generate and Share",
+      "description": "Instantly get your Ghibli-style image and download high-resolution versions to share with friends or use in your projects."
+    },
+    "startButton": "Start Creating Now"
+  },
+  "advancedFeatures": {
+    "title": "Ghibli AI Advanced Features",
+    "description": "Explore the unique capabilities of our powerful Ghibli-style AI generator",
+    "feature1": {
+      "title": "Film-Specific Styles",
+      "description": "Create images in the distinctive style of different Studio Ghibli films, from the pastoral scenes of 'My Neighbor Totoro' to the fantastical worlds of 'Spirited Away'."
+    },
+    "feature2": {
+      "title": "High-Resolution Output",
+      "description": "Generate high-quality Ghibli-style images suitable for printing, digital portfolios, and professional projects."
+    },
+    "feature3": {
+      "title": "Aesthetic Customization",
+      "description": "Fine-tune your Ghibli AI images with controls for lighting, color palettes, and atmospheric elements unique to Miyazaki's works."
+    },
+    "feature4": {
+      "title": "Multiple Variations",
+      "description": "Create multiple interpretations of your Ghibli concept with a single prompt, exploring different artistic directions."
+    },
+    "feature5": {
+      "title": "Rapid Generation",
+      "description": "Transform your ideas into Ghibli-style artwork in seconds, enabling quick iteration and creative exploration."
+    },
+    "feature6": {
+      "title": "Photo Transformation",
+      "description": "Convert your personal photos into magical Ghibli-style illustrations using our Ghibli AI filter technology."
+    },
+    "exploreAll": "Explore All Features",
+    "exploreButton": "Explore All Features"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions About Ghibli AI",
+    "description": "Learn about common questions and answers about our Ghibli-style AI generator",
+    "q1": {
+      "question": "What is Ghibli AI?",
+      "answer": "Ghibli AI is a specialized AI image generator that creates authentic Ghibli-style artwork from text descriptions. It captures the unique aesthetics of Miyazaki's films, transforming your ideas into magical Ghibli illustrations."
+    },
+    "q2": {
+      "question": "How does Ghibli AI work?",
+      "answer": "Ghibli AI uses advanced deep learning models trained on Studio Ghibli's artistic style. When you enter a text description or upload an image, our AI analyzes it and generates a new image that matches both your content and the distinctive Ghibli aesthetic."
+    },
+    "q3": {
+      "question": "How long does it take to generate an image?",
+      "answer": "Most images are generated within 5-15 seconds, depending on the complexity of your description and the server load. High-resolution outputs may take slightly longer to process."
+    },
+    "q4": {
+      "question": "Can I use the generated images commercially?",
+      "answer": "Images created with the free version are for personal use only. For commercial usage rights, please check our premium plans which include commercial licensing options."
+    },
+    "q5": {
+      "question": "Can I transform my photos with Ghibli AI?",
+      "answer": "Yes, Ghibli AI includes a photo transformation feature that applies Ghibli filters to your existing images, converting them into Miyazaki-style illustrations."
+    },
+    "q6": {
+      "question": "Is Ghibli AI suitable for beginners?",
+      "answer": "Yes, Ghibli AI features an intuitive interface that makes it easy for beginners to create beautiful Ghibli-style artwork without any artistic experience or technical skills."
+    }
+  },
+  "cta": {
+    "title": "Ready to Create Your Ghibli Masterpiece?",
+    "description": "Join thousands of users already creating magical Ghibli-style artwork",
+    "button": "Start Creating for Free"
+  },
+  "footer": {
+    "about": "About Ghibli AI",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us",
+    "copyright": "© 2025 Ghibli AI. All rights reserved."
+  },
+  "generatorPage": {
+    "title": "Create Ghibli-Style Images",
+    "description": "Transform your ideas into magical Studio Ghibli style artwork",
+    "textToImage": "Text to Image",
+    "imageToImage": "Image to Image",
+    "textPromptLabel": "Describe your image",
+    "textPromptPlaceholder": "A peaceful countryside with a small cottage, Totoro style...",
+    "textPromptTip": "Tip: The more detailed your description, the better the result. Include scene, characters, time, weather, etc.",
+    "uploadImageLabel": "Upload your image",
+    "uploadImageDescription": "Drag and drop an image here, or click to select",
+    "uploadImageFormat": "Supports {{formats}} formats, maximum {{size}}",
+    "styleSelection": "Choose a Ghibli Style",
+    "generateButton": "Generate Ghibli-Style Image",
+    "generating": "Generating...",
+    "downloadButton": "Download",
+    "shareButton": "Share",
+    "result": "Generated Result",
+    "generatedImageAlt": "Generated Ghibli-style image",
+    "resultPlaceholder": "Your Ghibli-style image will appear here",
+    "resultInstructions": "Please {{action}} on the left and click the generate button",
+    "usageTips": "Usage Tips",
+    "photoTipsTitle": "Photo Selection Tips",
+    "photoTipsContent": "Choose clear, well-lit photos and avoid complex backgrounds or too many people. Natural landscapes, architecture, and simple portraits work best.",
+    "textTipsTitle": "Text Description Tips",
+    "textTipsContent": "Describe scenes, characters, environment, and atmosphere in detail. Using elements from Ghibli films (like Totoro, No-Face, flying machines) will yield better results.",
+    "styleTipsTitle": "Style Selection Tips",
+    "styleTipsContent": "Different film styles suit different types of images. Choose 'My Neighbor Totoro' or 'Princess Mononoke' for nature scenes, 'Spirited Away' for city scenes, and 'Ponyo' for ocean scenes.",
+    "styleDescriptions": {
+      "spiritedAway": "Mysterious, dreamlike style with unique architecture and characters",
+      "myNeighborTotoro": "Warm, natural style with rural and forest elements",
+      "howlsMovingCastle": "Fantasy, steampunk style with mechanical and magical elements",
+      "princessMononoke": "Natural, epic style with forests and mystical creatures",
+      "kikisDeliveryService": "Bright, warm European town style",
+      "ponyo": "Ocean, watercolor style with vibrant colors"
+    },
+    "errors": {
+      "fileType": "Please upload an image file!",
+      "fileSize": "Image size cannot exceed 10MB!",
+      "noImage": "Please upload an image first!",
+      "noText": "Please enter a text description!"
+    },
+    "share": {
+      "title": "My Ghibli-Style Image",
+      "text": "Image generated with Ghibli-Style AI",
+      "success": "Shared successfully",
+      "error": "Share failed",
+      "copied": "Image link copied to clipboard!",
+      "copyError": "Failed to copy link, please copy manually!"
+    },
+    "styleOptions": {
+      "spiritedAway": "Spirited Away",
+      "myNeighborTotoro": "My Neighbor Totoro",
+      "howlsMovingCastle": "Howl's Moving Castle",
+      "princessMononoke": "Princess Mononoke",
+      "kikisDeliveryService": "Kiki's Delivery Service",
+      "ponyo": "Ponyo"
+    }
+  },
+  "galleryPage": {
+    "title": "Ghibli Style Gallery",
+    "description": "Explore amazing Ghibli-style artwork created by our community",
+    "searchPlaceholder": "Search artworks or creators...",
+    "filterAll": "All Styles",
+    "sortOption": {
+      "newest": "Newest",
+      "mostpopular": "Most Popular",
+      "oldest": "Oldest"
+    },
+    "styleOption": {
+      "all": "All Styles",
+      "myneighbortotoro": "My Neighbor Totoro Style",
+      "castleinthesky": "Castle in the Sky Style",
+      "spiritedaway": "Spirited Away Style",
+      "howlsmovingcastle": "Howl's Moving Castle Style",
+      "porcorosso": "Porco Rosso Style",
+      "ponyo": "Ponyo Style"
+    },
+    "noResults": "No matching artworks found",
+    "tryDifferent": "Try different search terms or style selections.",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "createdBy": "Created by"
+  },
+  "aboutPage": {
+    "title": "About Ghibli AI",
+    "description": "Explore our story, mission, and creative philosophy",
+    "ourStory": {
+      "title": "Our Story",
+      "content1": "Ghibli AI was born out of a love for the works of Hayao Miyazaki and Studio Ghibli. We are a group of creators passionate about animation art and artificial intelligence, hoping to use the power of technology to allow more people to experience the joy of creating Ghibli-style artwork.",
+      "content2": "Our team consists of artists, engineers, and designers, all dedicated to building a platform that both respects original art and inspires innovation. Through advanced AI technology, we make it easy for everyone to create beautiful Ghibli-style artwork."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "content": "Our mission is to democratize and popularize Ghibli-style art creation through artificial intelligence technology, allowing everyone to experience the joy of creation while respecting the value of original art.",
+      "believe": "We believe that technology should serve creativity, not limit it. Through Ghibli AI, we hope to:",
+      "point1": "Make Ghibli-style art more accessible and appreciated by more people",
+      "point2": "Provide new inspiration and tools for artists",
+      "point3": "Promote exchange and sharing in the global creative community",
+      "point4": "Push the boundaries and possibilities of AI art creation"
+    },
+    "technology": {
+      "title": "Technology & Innovation",
+      "feature1": {
+        "title": "Advanced AI Models",
+        "description": "Our AI models are trained on thousands of original Studio Ghibli works, accurately capturing the details, colors, and atmosphere of Ghibli style to provide users with the most authentic Ghibli style experience."
+      },
+      "feature2": {
+        "title": "Diverse Style Options",
+        "description": "We offer style choices from various Ghibli films, including 'Spirited Away', 'My Neighbor Totoro', 'Howl's Moving Castle', etc., allowing users to choose different artistic styles according to their preferences."
+      },
+      "feature3": {
+        "title": "User-Friendly Interface",
+        "description": "We've carefully designed a clean and intuitive user interface so that both technical experts and art enthusiasts can easily get started and enjoy the creative process."
+      },
+      "feature4": {
+        "title": "Privacy & Security",
+        "description": "We value user privacy and data security, using advanced encryption technology to protect users' uploaded images and created works, ensuring users can use our services with peace of mind."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "name": "John Zhang",
+        "role": "Founder & AI Researcher"
+      },
+      "member2": {
+        "name": "Lisa Wang",
+        "role": "Chief Technology Officer"
+      },
+      "member3": {
+        "name": "Michael Chen",
+        "role": "Art Director"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "intro": "We welcome your feedback and suggestions. If you have any questions or ideas, please feel free to contact us:",
+      "methods": "Contact Methods",
+      "email": "contact@ghibliai.com",
+      "phone": "+1 (555) 123-4567",
+      "address": "123 Animation Street, Creative District, CA 94103",
+      "social": "Social Media",
+      "followUs": "Follow us on social media for the latest updates and inspiration:"
+    }
+  },
+  "notFoundPage": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "description": "It looks like the page you're looking for has been taken away by Totoro! Don't worry, you can return to the homepage to continue exploring the magical world of Ghibli.",
+    "backToHome": "Back to Home",
+    "imageAlt": "404 Not Found - Totoro"
+  }
+}

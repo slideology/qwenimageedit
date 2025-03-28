@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义全局样式 */
+@layer base {
+  body {
+    @apply bg-ghibli-cream text-gray-800 font-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold;
+  }
+}
+
+/* 自定义组件样式 */
+@layer components {
+  /* 主按钮样式 */
+  .btn-primary {
+    @apply px-6 py-3 bg-ghibli-blue text-white rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 font-sans font-medium;
+  }
+  
+  /* 次要按钮样式 */
+  .btn-secondary {
+    @apply px-6 py-3 bg-white border border-ghibli-blue text-ghibli-blue rounded-lg shadow-sm hover:bg-ghibli-blue/5 transition-all duration-300 font-sans font-medium;
+  }
+  
+  /* 卡片样式 */
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden border border-gray-100;
+  }
+  
+  /* 输入框样式 */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-ghibli-blue/50 focus:border-transparent;
+  }
+  
+  /* 动画效果 */
+  .float-animation {
+    @apply animate-float;
+  }
+}
