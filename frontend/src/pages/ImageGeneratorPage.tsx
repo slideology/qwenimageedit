@@ -124,7 +124,7 @@ const ImageGeneratorPage: React.FC = () => {
     // 模拟API调用（实际项目中应替换为真实的API调用）
     setTimeout(() => {
       // 模拟生成结果
-      const mockResult = 'https://via.placeholder.com/800x600?text=吉卜力风格生成图像';
+      const mockResult = '/images/placeholders/generated-800x600.svg';
       setGeneratedImage(mockResult);
       setIsGenerating(false);
     }, 3000);

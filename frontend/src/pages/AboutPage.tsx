@@ -18,7 +18,7 @@ const AboutPage: React.FC = () => {
           <div className="md:flex-shrink-0">
             <img 
               className="h-full w-full object-cover md:w-48" 
-              src="https://via.placeholder.com/400x600?text=Ghibli+AI+Team" 
+              src="/images/placeholders/team-400x600.svg" 
               alt="Ghibli AI Team" 
             />
           </div>
@@ -111,7 +111,7 @@ const AboutPage: React.FC = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img 
               className="w-full h-48 object-cover" 
-              src="https://via.placeholder.com/300x300?text=Team+Member+1" 
+              src="/images/placeholders/team-member-300x300.svg" 
               alt="Team Member" 
             />
             <div className="p-4">
@@ -122,7 +122,7 @@ const AboutPage: React.FC = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img 
               className="w-full h-48 object-cover" 
-              src="https://via.placeholder.com/300x300?text=Team+Member+2" 
+              src="/images/placeholders/team-member-300x300.svg" 
               alt="Team Member" 
             />
             <div className="p-4">
@@ -133,7 +133,7 @@ const AboutPage: React.FC = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img 
               className="w-full h-48 object-cover" 
-              src="https://via.placeholder.com/300x300?text=Team+Member+3" 
+              src="/images/placeholders/team-member-300x300.svg" 
               alt="Team Member" 
             />
             <div className="p-4">

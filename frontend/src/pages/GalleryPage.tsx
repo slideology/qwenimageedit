@@ -7,7 +7,7 @@ const mockImages = [
     id: 1,
     title: 'Totoro in the Forest',
     author: 'Miyazaki Fan',
-    imageUrl: 'https://via.placeholder.com/400x300?text=Totoro+Style+Image',
+    imageUrl: '/images/placeholders/gallery-400x300.svg',
     style: 'My Neighbor Totoro',
     likes: 120,
     createdAt: '2023-04-15'
@@ -16,7 +16,7 @@ const mockImages = [
     id: 2,
     title: 'Castle in the Sky',
     author: 'Ghibli Enthusiast',
-    imageUrl: 'https://via.placeholder.com/400x300?text=Castle+in+the+Sky+Style',
+    imageUrl: '/images/placeholders/gallery-400x300.svg',
     style: 'Castle in the Sky',
     likes: 98,
     createdAt: '2023-04-14'
@@ -25,7 +25,7 @@ const mockImages = [
     id: 3,
     title: 'World of Spirited Away',
     author: 'Animation Creator',
-    imageUrl: 'https://via.placeholder.com/400x300?text=Spirited+Away+Style',
+    imageUrl: '/images/placeholders/gallery-400x300.svg',
     style: 'Spirited Away',
     likes: 156,
     createdAt: '2023-04-13'
@@ -34,7 +34,7 @@ const mockImages = [
     id: 4,
     title: "Howl's Moving Castle",
     author: 'Fantasy Artist',
-    imageUrl: 'https://via.placeholder.com/400x300?text=Howls+Moving+Castle',
+    imageUrl: '/images/placeholders/gallery-400x300.svg',
     style: "Howl's Moving Castle",
     likes: 87,
     createdAt: '2023-04-12'
@@ -43,7 +43,7 @@ const mockImages = [
     id: 5,
     title: 'Porco Rosso Flying',
     author: 'Aviation Fan',
-    imageUrl: 'https://via.placeholder.com/400x300?text=Porco+Rosso+Style',
+    imageUrl: '/images/placeholders/gallery-400x300.svg',
     style: 'Porco Rosso',
     likes: 65,
     createdAt: '2023-04-11'
@@ -52,7 +52,7 @@ const mockImages = [
     id: 6,
     title: 'Ponyo on the Cliff',
     author: 'Ocean Enthusiast',
-    imageUrl: 'https://via.placeholder.com/400x300?text=Ponyo+Style+Image',
+    imageUrl: '/images/placeholders/gallery-400x300.svg',
     style: 'Ponyo',
     likes: 110,
     createdAt: '2023-04-10'

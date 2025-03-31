@@ -43,7 +43,7 @@ const HomePage = () => {
                   className="relative z-10 rounded-xl shadow-2xl max-w-full"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = 'https://via.placeholder.com/600x400?text=吉卜力风格图像';
+                    target.src = '/images/placeholders/placeholder-600x400.svg';
                   }}
                 />
               </div>

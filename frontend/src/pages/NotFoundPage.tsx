@@ -10,7 +10,7 @@ const NotFoundPage: React.FC = () => {
         {/* 404 Image */}
         <div className="mb-8 flex justify-center">
           <img 
-            src="https://via.placeholder.com/300x200?text=404+Totoro" 
+            src="/images/placeholders/404-totoro-300x200.svg" 
             alt={t('notFoundPage.imageAlt')} 
             className="w-64 h-auto"
           />
