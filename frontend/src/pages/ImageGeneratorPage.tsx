@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import GradioGenerator from '../components/GradioGenerator';
+import GradioApiGenerator from '../components/GradioApiGenerator';
 
 /**
  * 图像生成页面组件
@@ -9,7 +10,7 @@ import GradioGenerator from '../components/GradioGenerator';
 const ImageGeneratorPage: React.FC = () => {
   const { t } = useTranslation();
   // 状态管理
-  const [activeTab, setActiveTab] = useState<'photo' | 'text' | 'gradio'>('photo'); // 当前激活的标签页
+  const [activeTab, setActiveTab] = useState<'photo' | 'text' | 'gradio' | 'api'>('photo'); // 当前激活的标签页
   const [selectedStyle, setSelectedStyle] = useState<string>('spirited-away'); // 选中的风格
   const [uploadedImage, setUploadedImage] = useState<string | null>(null); // 上传的图片
   const [textPrompt, setTextPrompt] = useState<string>(''); // 文字提示词
@@ -28,7 +29,7 @@ const ImageGeneratorPage: React.FC = () => {
   ];
   
   // 处理标签页切换
-  const handleTabChange = (tab: 'photo' | 'text' | 'gradio') => {
+  const handleTabChange = (tab: 'photo' | 'text' | 'gradio' | 'api') => {
     setActiveTab(tab);
     // 切换标签页时重置生成的图像
     setGeneratedImage(null);
@@ -203,7 +204,7 @@ const ImageGeneratorPage: React.FC = () => {
         
         {/* Tab Switching */}
         <div className="flex justify-center mb-8">
-          <div className="bg-white rounded-full shadow-md p-1 inline-flex">
+          <div className="bg-white rounded-full shadow-md p-1 inline-flex flex-wrap justify-center">
             <button
               className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeTab === 'photo'
@@ -234,10 +235,24 @@ const ImageGeneratorPage: React.FC = () => {
             >
               {t('generatorPage.gradioGenerator', 'Gradio生成器')}
             </button>
+            <button
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                activeTab === 'api'
+                  ? 'bg-ghibli-blue text-white'
+                  : 'text-gray-600 hover:bg-gray-100'
+              }`}
+              onClick={() => handleTabChange('api')}
+            >
+              {t('generatorPage.apiGenerator', 'API生成器')}
+            </button>
           </div>
         </div>
         
-        {activeTab === 'gradio' ? (
+        {activeTab === 'api' ? (
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            <GradioApiGenerator />
+          </div>
+        ) : activeTab === 'gradio' ? (
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <GradioGenerator />
           </div>

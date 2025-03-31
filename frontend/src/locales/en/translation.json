@@ -186,7 +186,13 @@
     "gradioGenerator": "Gradio Generator",
     "gradioTitle": "Ghibli Style AI Generator",
     "gradioDescription": "Transform your ideas into beautiful Ghibli-style artwork using our AI model.",
-    "gradioDisclaimer": "This generator is powered by Hugging Face and Gradio. Results may vary based on your inputs."
+    "gradioDisclaimer": "This generator is powered by Hugging Face and Gradio. Results may vary based on your inputs.",
+    "apiGenerator": "API Generator",
+    "apiTitle": "Ghibli Style AI API",
+    "apiDescription": "Direct API access to our Ghibli-style AI model for faster and more reliable generation.",
+    "apiPrompt": "Enter your description",
+    "apiGenerating": "Generating image...",
+    "apiError": "Error generating image. Please try again later."
   },
   "galleryPage": {
     "title": "Ghibli Style Gallery",
