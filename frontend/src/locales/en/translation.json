@@ -182,7 +182,11 @@
       "princessMononoke": "Princess Mononoke",
       "kikisDeliveryService": "Kiki's Delivery Service",
       "ponyo": "Ponyo"
-    }
+    },
+    "gradioGenerator": "Gradio Generator",
+    "gradioTitle": "Ghibli Style AI Generator",
+    "gradioDescription": "Transform your ideas into beautiful Ghibli-style artwork using our AI model.",
+    "gradioDisclaimer": "This generator is powered by Hugging Face and Gradio. Results may vary based on your inputs."
   },
   "galleryPage": {
     "title": "Ghibli Style Gallery",

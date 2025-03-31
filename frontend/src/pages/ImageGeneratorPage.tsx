@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import GradioGenerator from '../components/GradioGenerator';
 
 /**
  * 图像生成页面组件
@@ -8,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 const ImageGeneratorPage: React.FC = () => {
   const { t } = useTranslation();
   // 状态管理
-  const [activeTab, setActiveTab] = useState<'photo' | 'text'>('photo'); // 当前激活的标签页
+  const [activeTab, setActiveTab] = useState<'photo' | 'text' | 'gradio'>('photo'); // 当前激活的标签页
   const [selectedStyle, setSelectedStyle] = useState<string>('spirited-away'); // 选中的风格
   const [uploadedImage, setUploadedImage] = useState<string | null>(null); // 上传的图片
   const [textPrompt, setTextPrompt] = useState<string>(''); // 文字提示词
@@ -27,7 +28,7 @@ const ImageGeneratorPage: React.FC = () => {
   ];
   
   // 处理标签页切换
-  const handleTabChange = (tab: 'photo' | 'text') => {
+  const handleTabChange = (tab: 'photo' | 'text' | 'gradio') => {
     setActiveTab(tab);
     // 切换标签页时重置生成的图像
     setGeneratedImage(null);
@@ -223,15 +224,31 @@ const ImageGeneratorPage: React.FC = () => {
             >
               {t('generatorPage.textToImage')}
             </button>
+            <button
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                activeTab === 'gradio'
+                  ? 'bg-ghibli-blue text-white'
+                  : 'text-gray-600 hover:bg-gray-100'
+              }`}
+              onClick={() => handleTabChange('gradio')}
+            >
+              {t('generatorPage.gradioGenerator', 'Gradio生成器')}
+            </button>
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* 左侧：输入区域 */}
-          <div className="bg-white rounded-xl shadow-md p-6">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">
-              {activeTab === 'photo' ? t('generatorPage.uploadImageLabel') : t('generatorPage.textPromptLabel')}
-            </h2>
+        {activeTab === 'gradio' ? (
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            <GradioGenerator />
+          </div>
+        ) : (
+          <>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* 左侧：输入区域 */}
+              <div className="bg-white rounded-xl shadow-md p-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6">
+                  {activeTab === 'photo' ? t('generatorPage.uploadImageLabel') : t('generatorPage.textPromptLabel')}
+                </h2>
             
             {/* 照片上传区域 */}
             {activeTab === 'photo' && (
@@ -405,62 +422,9 @@ const ImageGeneratorPage: React.FC = () => {
               )}
             </div>
           </div>
-        </div>
-        
-        {/* Usage Tips */}
-        <div className="mt-12 bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">{t('generatorPage.usageTips')}</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-ghibli-blue text-white">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-800">{t('generatorPage.photoTipsTitle')}</h3>
-                <p className="mt-2 text-gray-600">
-                  {t('generatorPage.photoTipsContent')}
-                </p>
-              </div>
             </div>
-            
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-ghibli-purple text-white">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-800">{t('generatorPage.textTipsTitle')}</h3>
-                <p className="mt-2 text-gray-600">
-                  {t('generatorPage.textTipsContent')}
-                </p>
-              </div>
-            </div>
-            
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-ghibli-green text-white">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                  </svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-800">{t('generatorPage.styleTipsTitle')}</h3>
-                <p className="mt-2 text-gray-600">
-                  {t('generatorPage.styleTipsContent')}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          </>
+        )}
       </div>
     </div>
   );
