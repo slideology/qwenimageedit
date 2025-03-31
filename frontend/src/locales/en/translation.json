@@ -110,11 +110,21 @@
     "button": "Start Creating Ghibli Art For Free"
   },
   "footer": {
-    "about": "About Ghibli Style AI",
+    "title": "Ghibli Style AI",
+    "description": "Use our AI technology to transform your photos into Studio Ghibli style artwork, or generate Ghibli style images from text descriptions.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "generator": "Image Generator",
+    "gallery": "Gallery",
+    "about": "About Us",
+    "legalInfo": "Legal Information",
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
-    "contact": "Contact Us",
-    "copyright": "© 2025 Ghibli Style AI. All rights reserved."
+    "copyright": "Copyright Notice",
+    "contactUs": "Contact Us",
+    "email": "contact@ghiblistyleai.com",
+    "location": "Beijing, China",
+    "rights": "All rights reserved."
   },
   "generatorPage": {
     "title": "Create Ghibli Style AI Artwork",

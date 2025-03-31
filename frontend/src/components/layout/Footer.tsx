@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 /**
  * 网站底部组件
  * 包含网站导航、联系方式、社交媒体链接和版权信息
  */
 const Footer = () => {
+  const { t } = useTranslation();
   // 获取当前年份
   const currentYear = new Date().getFullYear();
   
@@ -15,34 +17,34 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* 网站介绍 */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">吉卜力风格AI</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.title')}</h3>
             <p className="text-gray-300 mb-4">
-              使用我们的AI技术，将您的照片转换为吉卜力工作室风格的艺术作品，或通过文字描述生成吉卜力风格的图像。
+              {t('footer.description')}
             </p>
           </div>
           
           {/* 快速链接 */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">快速链接</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-white transition-colors">
-                  首页
+                  {t('footer.home')}
                 </Link>
               </li>
               <li>
                 <Link to="/generator" className="text-gray-300 hover:text-white transition-colors">
-                  图像生成
+                  {t('footer.generator')}
                 </Link>
               </li>
               <li>
                 <Link to="/gallery" className="text-gray-300 hover:text-white transition-colors">
-                  画廊
+                  {t('footer.gallery')}
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
-                  关于我们
+                  {t('footer.about')}
                 </Link>
               </li>
             </ul>
@@ -50,21 +52,21 @@ const Footer = () => {
           
           {/* 法律信息 */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">法律信息</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.legalInfo')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/terms" className="text-gray-300 hover:text-white transition-colors">
-                  服务条款
+                  {t('footer.terms')}
                 </Link>
               </li>
               <li>
                 <Link to="/privacy" className="text-gray-300 hover:text-white transition-colors">
-                  隐私政策
+                  {t('footer.privacy')}
                 </Link>
               </li>
               <li>
                 <Link to="/copyright" className="text-gray-300 hover:text-white transition-colors">
-                  版权声明
+                  {t('footer.copyright')}
                 </Link>
               </li>
             </ul>
@@ -72,7 +74,7 @@ const Footer = () => {
           
           {/* 联系我们 */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">联系我们</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.contactUs')}</h3>
             <ul className="space-y-2">
               <li className="text-gray-300">
                 <span className="flex items-center">
@@ -80,7 +82,7 @@ const Footer = () => {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  contact@ghiblistyleai.com
+                  {t('footer.email')}
                 </span>
               </li>
               <li className="text-gray-300">
@@ -88,7 +90,7 @@ const Footer = () => {
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
-                  中国，北京
+                  {t('footer.location')}
                 </span>
               </li>
             </ul>
@@ -116,7 +118,7 @@ const Footer = () => {
         
         {/* 版权信息 */}
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>© {currentYear} 吉卜力风格AI. 保留所有权利。</p>
+          <p>© {currentYear} {t('footer.title')}. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>
