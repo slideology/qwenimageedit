@@ -294,5 +294,11 @@
     "message": "Free to Generate AI Video Online Now",
     "cta": "Try it Free",
     "close": "Close banner"
+  },
+  "twitterFeedback": {
+    "title": "Spread the Word About Ghibli AI",
+    "subtitle": "Love using Ghibli AI? See what our users are saying on Twitter with #GhibliAI!",
+    "readMore": "Read 15 replies",
+    "loadMore": "Load More Tweets"
   }
 }

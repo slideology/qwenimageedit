@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import AdBanner from '../components/AdBanner';
 
 // Mock gallery data
 const mockImages = [
@@ -7,7 +8,7 @@ const mockImages = [
     id: 1,
     title: 'Totoro in the Forest',
     author: 'Miyazaki Fan',
-    imageUrl: '/images/placeholders/gallery-400x300.svg',
+    imageUrl: '/images/ghibli/2.jpeg',
     style: 'My Neighbor Totoro',
     likes: 120,
     createdAt: '2023-04-15'
@@ -16,7 +17,7 @@ const mockImages = [
     id: 2,
     title: 'Castle in the Sky',
     author: 'Ghibli Enthusiast',
-    imageUrl: '/images/placeholders/gallery-400x300.svg',
+    imageUrl: '/images/ghibli/3.jpeg',
     style: 'Castle in the Sky',
     likes: 98,
     createdAt: '2023-04-14'
@@ -25,7 +26,7 @@ const mockImages = [
     id: 3,
     title: 'World of Spirited Away',
     author: 'Animation Creator',
-    imageUrl: '/images/placeholders/gallery-400x300.svg',
+    imageUrl: '/images/ghibli/4.jpeg',
     style: 'Spirited Away',
     likes: 156,
     createdAt: '2023-04-13'
@@ -34,7 +35,7 @@ const mockImages = [
     id: 4,
     title: "Howl's Moving Castle",
     author: 'Fantasy Artist',
-    imageUrl: '/images/placeholders/gallery-400x300.svg',
+    imageUrl: '/images/ghibli/5.jpeg',
     style: "Howl's Moving Castle",
     likes: 87,
     createdAt: '2023-04-12'
@@ -43,7 +44,7 @@ const mockImages = [
     id: 5,
     title: 'Porco Rosso Flying',
     author: 'Aviation Fan',
-    imageUrl: '/images/placeholders/gallery-400x300.svg',
+    imageUrl: '/images/ghibli/6.jpeg',
     style: 'Porco Rosso',
     likes: 65,
     createdAt: '2023-04-11'
@@ -52,7 +53,7 @@ const mockImages = [
     id: 6,
     title: 'Ponyo on the Cliff',
     author: 'Ocean Enthusiast',
-    imageUrl: '/images/placeholders/gallery-400x300.svg',
+    imageUrl: '/images/ghibli/7.jpeg',
     style: 'Ponyo',
     likes: 110,
     createdAt: '2023-04-10'
@@ -156,6 +157,9 @@ const GalleryPage: React.FC = () => {
         </div>
       </div>
 
+      {/* 广告横幅 */}
+      <AdBanner />
+      
       {/* Image Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredImages.length > 0 ? (

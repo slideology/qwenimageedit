@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import GradioGenerator from '../components/GradioGenerator';
 import GradioApiGenerator from '../components/GradioApiGenerator';
+import AdBanner from '../components/AdBanner';
 
 /**
  * 图像生成页面组件
@@ -441,6 +442,9 @@ const ImageGeneratorPage: React.FC = () => {
           </>
         )}
       </div>
+      
+      {/* 广告横幅 */}
+      <AdBanner />
     </div>
   );
 };

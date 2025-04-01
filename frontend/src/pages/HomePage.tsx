@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import TwitterEmbeds from '../components/TwitterEmbeds';
+import AdBanner from '../components/AdBanner';
 
 /**
  * 网站首页组件
@@ -38,13 +40,9 @@ const HomePage = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-white/20 rounded-full blur-xl"></div>
                 <img 
-                  src="/src/assets/hero-image.png" 
+                  src="/images/ghibli/1.jpeg" 
                   alt={t('hero.title')} 
                   className="relative z-10 rounded-xl shadow-2xl max-w-full"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = '/images/placeholders/placeholder-600x400.svg';
-                  }}
                 />
               </div>
             </div>
@@ -348,6 +346,12 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      
+      {/* 广告横幅 */}
+      <AdBanner />
+      
+      {/* 用户Twitter反馈 */}
+      <TwitterEmbeds />
       
       {/* 号召性用语 */}
       <section className="py-20 bg-gradient-to-r from-ghibli-blue to-ghibli-purple text-white">
