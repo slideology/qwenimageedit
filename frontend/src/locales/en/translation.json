@@ -289,5 +289,10 @@
     "description": "It looks like the page you're looking for has been taken away by Totoro! Don't worry, you can return to the homepage to continue exploring the magical world of Ghibli.",
     "backToHome": "Back to Home",
     "imageAlt": "404 Not Found - Totoro"
+  },
+  "affiliateBanner": {
+    "message": "Free to Generate AI Video Online Now",
+    "cta": "Try it Free",
+    "close": "Close banner"
   }
 }

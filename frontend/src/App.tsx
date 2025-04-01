@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import AffiliateBanner from './components/AffiliateBanner';
 import HomePage from './pages/HomePage';
 import ImageGeneratorPage from './pages/ImageGeneratorPage';
 import GalleryPage from './pages/GalleryPage';
@@ -10,6 +11,7 @@ import NotFoundPage from './pages/NotFoundPage';
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
+      <AffiliateBanner />
       <Header />
       <main className="flex-grow">
         <Routes>
