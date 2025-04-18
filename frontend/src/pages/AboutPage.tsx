@@ -1,18 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import AdBanner from '../components/AdBanner';
+import GoogleAdSenseBanner from '../components/GoogleAdSenseBanner';
 
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="container mx-auto px-4 py-12">
-      {/* Page Title */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-blue-600 mb-2">{t('aboutPage.title')}</h1>
-        <p className="text-lg text-gray-600">{t('aboutPage.description')}</p>
-      </div>
-
+    <>
+      {/* Google 广告位 */}
+      <GoogleAdSenseBanner />
+      <div className="container mx-auto px-4 py-12">
+        {/* Page Title */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-blue-600 mb-2">{t('aboutPage.title')}</h1>
+          <p className="text-lg text-gray-600">{t('aboutPage.description')}</p>
 
 
       {/* Our Mission */}
@@ -92,5 +94,8 @@ const AboutPage: React.FC = () => {
     </div>
   );
 };
+
+    </>
+  );
 
 export default AboutPage;

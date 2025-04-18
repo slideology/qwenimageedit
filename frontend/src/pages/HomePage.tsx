@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import TwitterEmbeds from '../components/TwitterEmbeds';
 import AdBanner from '../components/AdBanner';
+import GoogleAdSenseBanner from '../components/GoogleAdSenseBanner';
 
 /**
  * 网站首页组件
@@ -53,6 +54,8 @@ const HomePage = () => {
         <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-ghibli-cream to-transparent"></div>
       </section>
       
+      {/* Google 广告位 */}
+      <GoogleAdSenseBanner />
       {/* 为什么选择吉卜力AI */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import AdBanner from '../components/AdBanner';
+import GoogleAdSenseBanner from '../components/GoogleAdSenseBanner';
 
 // Mock gallery data
 const mockImages = [
@@ -88,6 +89,9 @@ const GalleryPage: React.FC = () => {
     });
 
   return (
+    <>
+      {/* Google 广告位 */}
+      <GoogleAdSenseBanner />
     <div className="container mx-auto px-4 py-8">
       {/* Page Title */}
       <div className="text-center mb-12">
@@ -241,5 +245,8 @@ const GalleryPage: React.FC = () => {
     </div>
   );
 };
+
+    </>
+  );
 
 export default GalleryPage;
