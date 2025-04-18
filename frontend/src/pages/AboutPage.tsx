@@ -15,9 +15,9 @@ const AboutPage: React.FC = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-600 mb-2">{t('aboutPage.title')}</h1>
           <p className="text-lg text-gray-600">{t('aboutPage.description')}</p>
+        </div>
 
-
-      {/* Our Mission */}
+        {/* Our Mission */}
       <div className="max-w-4xl mx-auto mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">{t('aboutPage.ourMission.title')}</h2>
         <div className="bg-white rounded-lg shadow-md p-8">
@@ -36,8 +36,8 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Technology & Innovation */}
-      <div className="max-w-4xl mx-auto mb-12">
+        {/* Technology & Innovation */}
+        <div className="max-w-4xl mx-auto mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">{t('aboutPage.technology.title')}</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg shadow-md p-6">
@@ -87,12 +87,12 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
 
-      {/* 广告横幅 */}
-      <div className="max-w-4xl mx-auto mb-12">
+        {/* 广告横幅 */}
+        <div className="max-w-4xl mx-auto mb-12">
         <AdBanner />
       </div>
     </div>
-    </>
+  </>
   );
 };
 
