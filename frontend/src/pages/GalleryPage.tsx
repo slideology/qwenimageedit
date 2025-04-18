@@ -92,7 +92,7 @@ const GalleryPage: React.FC = () => {
     <>
       {/* Google 广告位 */}
       <GoogleAdSenseBanner />
-    <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8">
       {/* Page Title */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-blue-600 mb-2">{t('galleryPage.title')}</h1>
@@ -243,10 +243,8 @@ const GalleryPage: React.FC = () => {
         </nav>
       </div>
     </div>
-  );
-};
-
     </>
   );
+};
 
 export default GalleryPage;

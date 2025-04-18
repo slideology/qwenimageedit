@@ -92,10 +92,8 @@ const AboutPage: React.FC = () => {
         <AdBanner />
       </div>
     </div>
-  );
-};
-
     </>
   );
+};
 
 export default AboutPage;
