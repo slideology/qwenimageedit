@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 中心节点 -->
+  <circle cx="16" cy="16" r="3" fill="#1e40af"/>
+  
+  <!-- 左上节点 -->
+  <circle cx="8" cy="8" r="3" fill="#7c3aed"/>
+  
+  <!-- 右上节点 -->
+  <circle cx="24" cy="8" r="3" fill="#7c3aed"/>
+  
+  <!-- 底部节点 -->
+  <circle cx="16" cy="24" r="3" fill="#7c3aed"/>
+  
+  <!-- 连接线 -->
+  <line x1="13.5" y1="14" x2="10.5" y2="10" stroke="#1e40af" stroke-width="1.5"/>
+  <line x1="18.5" y1="14" x2="21.5" y2="10" stroke="#1e40af" stroke-width="1.5"/>
+  <line x1="16" y1="19" x2="16" y2="21" stroke="#1e40af" stroke-width="1.5"/>
+  
+  <!-- 装饰效果 -->
+  <circle cx="16" cy="16" r="1" fill="#f59e0b"/>
+</svg> 

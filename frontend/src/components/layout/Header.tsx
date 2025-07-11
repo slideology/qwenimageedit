@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 /**
- * 网站顶部导航栏组件
- * 包含网站Logo、主导航菜单和移动端响应式菜单
+ * Earth Zoom AI 网站顶部导航栏组件
+ * 包含Earth Zoom AI Logo、主导航菜单和移动端响应式菜单
  */
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,8 +15,10 @@ const Header = () => {
   // 导航链接数据
   const navLinks = [
     { name: t('header.home'), path: '/' },
-    { name: t('header.generator'), path: '/generator' },
-    { name: t('header.gallery'), path: '/gallery' },
+    { name: t('header.concept'), path: '/concept' },
+    { name: t('header.applications'), path: '/applications' },
+    { name: t('header.technology'), path: '/technology' },
+    { name: t('header.resources'), path: '/resources' },
     { name: t('header.about'), path: '/about' },
   ];
   
@@ -36,7 +38,12 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo区域 */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-ghibli-blue">Ghibli AI</span>
+            <img 
+              src="/images/earth-zoom/icons/earth-zoom-logo.svg" 
+              alt="Earth Zoom AI"
+              className="w-8 h-8"
+            />
+            <span className="text-2xl font-bold text-earth-blue">Earth Zoom AI</span>
           </Link>
           
           {/* 桌面端导航菜单 */}
@@ -47,8 +54,8 @@ const Header = () => {
                 to={link.path}
                 className={`font-medium transition-colors duration-200 ${
                   isActive(link.path)
-                    ? 'text-ghibli-blue border-b-2 border-ghibli-blue'
-                    : 'text-gray-600 hover:text-ghibli-blue'
+                    ? 'text-earth-blue border-b-2 border-earth-blue'
+                    : 'text-gray-600 hover:text-earth-blue'
                 }`}
               >
                 {link.name}
@@ -104,8 +111,8 @@ const Header = () => {
                   to={link.path}
                   className={`font-medium transition-colors duration-200 ${
                     isActive(link.path)
-                      ? 'text-ghibli-blue'
-                      : 'text-gray-600 hover:text-ghibli-blue'
+                      ? 'text-earth-blue'
+                      : 'text-gray-600 hover:text-earth-blue'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

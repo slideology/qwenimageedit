@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ghiblistyle-ai.com/sitemap.xml
+# Sitemap location
+Sitemap: https://earthzoomai.org/sitemap.xml
+
+# Crawl delay for better performance
+Crawl-delay: 1

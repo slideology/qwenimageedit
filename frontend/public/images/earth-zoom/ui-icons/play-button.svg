@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- 圆形背景 -->
+  <circle cx="24" cy="24" r="22" fill="#1e40af" stroke="#7c3aed" stroke-width="2"/>
+  
+  <!-- 播放三角形 -->
+  <path d="M18 15 L18 33 L33 24 Z" fill="#f8fafc"/>
+  
+  <!-- 高光效果 -->
+  <circle cx="24" cy="24" r="22" fill="url(#playGlow)" opacity="0.3"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <radialGradient id="playGlow" cx="0.3" cy="0.3">
+      <stop offset="0%" stop-color="#bfdbfe"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg> 

@@ -1,225 +1,155 @@
 {
   "header": {
     "home": "首页",
-    "generator": "图像生成器",
-    "gallery": "画廊",
+    "concept": "核心概念",
+    "applications": "应用案例",
+    "technology": "技术原理",
+    "resources": "开发资源",
     "about": "关于我们",
     "login": "登录",
     "signup": "注册"
   },
   "hero": {
-    "title": "吉卜力AI图像生成器",
-    "description": "创建真正捕捉宫崎骏独特艺术视觉的吉卜力风格艺术作品。轻松将照片转换或通过文字描述生成令人惊叹的吉卜力风格图像。",
-    "startCreating": "开始创作",
-    "browseGallery": "浏览画廊"
+    "title": "Earth Zoom AI",
+    "subtitle": "重新定义视觉边界",
+    "description": "体验前所未有的AI视觉技术，从任意图像开始，创造无限缩放到地球视角的震撼视频。让每个像素都承载着从微观到宏观的无限可能。",
+    "statistics": {
+      "zoomLevels": "无限缩放层级",
+      "applications": "100+ 应用场景",
+      "aiDriven": "AI智能驱动",
+      "videoQuality": "4K视频质量"
+    },
+    "buttons": {
+      "exploreFeatures": "探索核心功能",
+      "viewApplications": "查看应用案例",
+      "learnTechnology": "了解技术原理"
+    }
   },
   "features": {
-    "title": "为什么选择吉卜力AI",
-    "description": "吉卜力AI正在革新粉丝创作吉卜力工作室风格艺术的方式。我们的先进AI技术捕捉了宫崎骏独特的艺术视觉，将吉卜力的魔法世界带到您的指尖。",
+    "title": "为什么选择Earth Zoom AI",
+    "description": "Earth Zoom AI正在革新视觉内容创作的方式。我们的先进AI技术突破传统缩放限制，为教育、营销、艺术创作等领域提供前所未有的视觉体验。",
     "feature1": {
-      "title": "真实吉卜力风格",
-      "description": "使用我们专门的AI模型生成真正捕捉标志性吉卜力美学的图像。"
+      "title": "无限缩放技术",
+      "description": "突破传统视觉限制，实现从微观细节到地球全景的无缝缩放体验。"
     },
     "feature2": {
-      "title": "用户友好界面",
-      "description": "简单直观的设计使创建吉卜力风格艺术对所有人都触手可及，无论艺术能力如何。"
+      "title": "AI智能生成",
+      "description": "先进的深度学习算法自动分析和补全缩放层级，确保视觉连贯性和真实感。"
     },
     "feature3": {
-      "title": "创作灵活性",
-      "description": "将任何概念转化为神奇的宫崎骏风格插图，精确控制艺术元素。"
+      "title": "多场景应用",
+      "description": "适用于教育科普、营销推广、艺术创作、科学研究等多个领域的专业需求。"
     }
   },
   "howToUse": {
-    "title": "开始使用吉卜力AI",
-    "description": "通过三个简单步骤创建美丽的吉卜力风格艺术作品",
+    "title": "Earth Zoom AI工作原理",
+    "description": "四个步骤实现从局部到全球的无限视觉缩放",
     "step1": {
-      "title": "描述您的愿景",
-      "description": "输入您想要创建的吉卜力风格场景或角色的详细描述，或上传照片进行转换。"
+      "title": "图像分析",
+      "description": "AI深度分析输入图像的内容、构图和视觉特征，自动识别最佳缩放起点和路径规划。"
     },
     "step2": {
-      "title": "自定义您的风格",
-      "description": "调整设置以匹配特定的宫崎骏电影美学，如《千与千寻》、《龙猫》或《哈尔的移动城堡》。"
+      "title": "路径规划",
+      "description": "智能算法计算从起点到地球视角的最优缩放轨迹，确保视觉故事的连贯性和吸引力。"
     },
     "step3": {
-      "title": "生成并分享",
-      "description": "立即获取您的吉卜力风格图像，并下载高分辨率版本与朋友分享或用于您的项目。"
+      "title": "层级生成",
+      "description": "生成式AI创建多个中间缩放层级，无缝填补从局部到全球视角的视觉过渡。"
     },
-    "startButton": "立即开始创作"
+    "step4": {
+      "title": "视频合成",
+      "description": "高性能渲染引擎将所有层级合成为流畅的4K质量缩放视频，完成最终输出。"
+    },
+    "startButton": "探索技术原理"
   },
-  "advancedFeatures": {
-    "title": "吉卜力AI高级功能",
-    "description": "探索我们强大的吉卜力风格AI生成器的独特功能",
-    "feature1": {
-      "title": "电影特定风格",
-      "description": "创建不同吉卜力工作室电影的独特风格图像，从《龙猫》的田园风光到《千与千寻》的奇幻世界。"
+  "applications": {
+    "title": "Earth Zoom AI应用场景",
+    "description": "探索Earth Zoom AI技术在不同领域的创新应用",
+    "education": {
+      "title": "教育科普",
+      "description": "从微观世界到宇宙尺度，让抽象概念变得直观可见，革新地理、天文、生物等学科的教学方式。"
     },
-    "feature2": {
-      "title": "高分辨率输出",
-      "description": "生成适用于打印、数字艺术作品集和专业项目的高质量吉卜力风格图像。"
+    "marketing": {
+      "title": "营销推广",
+      "description": "创造病毒式传播的视觉内容，从产品细节展现到品牌全球布局，提升营销效果和用户参与度。"
     },
-    "feature3": {
-      "title": "美学自定义",
-      "description": "通过光照、色彩调色板和宫崎骏作品特有的气氛元素控制微调您的吉卜力AI图像。"
+    "artCreation": {
+      "title": "艺术创作",
+      "description": "为艺术家提供全新的创作媒介，探索从微观美学到宏观视野的艺术表达可能性。"
     },
-    "feature4": {
-      "title": "多种变体",
-      "description": "使用单个提示创建您的吉卜力概念的多种解释，探索不同的艺术方向。"
+    "research": {
+      "title": "科学研究",
+      "description": "助力科学数据可视化和研究成果展示，让复杂的科学概念更易理解和传播。"
     },
-    "feature5": {
-      "title": "快速生成",
-      "description": "在几秒钟内将您的想法转化为吉卜力风格艺术作品，实现快速迭代和创意探索。"
+    "documentation": {
+      "title": "纪录片制作",
+      "description": "为纪录片创作者提供独特的视觉叙事工具，增强故事的震撼力和感染力。"
     },
-    "feature6": {
-      "title": "照片转换",
-      "description": "使用我们的吉卜力AI滤镜技术将您的个人照片转换为神奇的吉卜力风格插图。"
+    "architecture": {
+      "title": "建筑设计",
+      "description": "从建筑细节到城市规划，帮助设计师和规划师展示作品的多层次视角和空间关系。"
     },
-    "exploreAll": "探索所有功能",
-    "exploreButton": "探索所有功能"
+    "exploreAll": "查看所有应用",
+    "exploreButton": "查看应用案例"
   },
   "faq": {
-    "title": "关于吉卜力AI的常见问题",
-    "description": "了解我们的吉卜力风格AI生成器的常见问题和答案",
+    "title": "关于Earth Zoom AI的常见问题",
+    "description": "了解Earth Zoom AI技术的常见问题和详细解答",
     "q1": {
-      "question": "什么是吉卜力AI？",
-      "answer": "吉卜力AI是一个专门的AI图像生成器，可以从文字描述中创建真实的吉卜力风格艺术作品。它捕捉了宫崎骏电影的独特美学，将您的想法转化为神奇的吉卜力插图。"
+      "question": "什么是Earth Zoom AI？",
+      "answer": "Earth Zoom AI是一种革命性的AI视觉技术，能够从任意图像开始，创造无限缩放到地球视角的连续视频。它突破了传统缩放的限制，为教育、营销、艺术等领域提供前所未有的视觉体验。"
     },
     "q2": {
-      "question": "吉卜力AI是如何工作的？",
-      "answer": "吉卜力AI使用经过吉卜力工作室艺术风格训练的先进深度学习模型。当您输入文字描述或上传图像时，我们的AI会分析它并生成一个既符合您的内容又具有独特吉卜力美学的新图像。"
+      "question": "Earth Zoom AI的技术原理是什么？",
+      "answer": "Earth Zoom AI采用先进的深度学习和计算机视觉技术，通过智能图像分析、路径规划、层级生成和视频合成四个步骤，实现从微观细节到地球全景的无缝视觉过渡。"
     },
     "q3": {
-      "question": "生成图像需要多长时间？",
-      "answer": "大多数图像会在5-15秒内生成，具体取决于您描述的复杂性和服务器负载。高分辨率输出可能需要稍长的处理时间。"
+      "question": "可以缩放到什么程度？",
+      "answer": "理论上，Earth Zoom AI可以实现无限级别的缩放，从像素级的微观细节一直扩展到太空中的地球全景，甚至更广阔的宇宙视角。"
     },
     "q4": {
-      "question": "我可以将生成的图像用于商业用途吗？",
-      "answer": "免费版本创建的图像仅供个人使用。对于商业使用权，请查看我们的高级计划，其中包括商业许可选项。"
+      "question": "适用于哪些应用场景？",
+      "answer": "Earth Zoom AI广泛适用于教育科普、营销推广、艺术创作、科学研究、纪录片制作、建筑设计等多个领域，特别适合需要展示尺度关系和空间概念的场景。"
     },
     "q5": {
-      "question": "我可以用吉卜力AI转换我的照片吗？",
-      "answer": "是的，吉卜力AI包含照片转换功能，将吉卜力滤镜应用于您的现有图像，将它们转换为宫崎骏风格的插图。"
+      "question": "生成的视频质量如何？",
+      "answer": "Earth Zoom AI可以生成高达4K分辨率的视频内容，确保在各种显示设备上都能呈现清晰、流畅的视觉效果。"
     },
     "q6": {
-      "question": "吉卜力AI适合初学者吗？",
-      "answer": "是的，吉卜力AI采用直观的界面，使初学者无需任何艺术经验或技术技能即可轻松创建美丽的吉卜力风格艺术作品。"
+      "question": "技术门槛高吗？",
+      "answer": "Earth Zoom AI设计了直观的用户界面和完善的开发文档，无论是普通用户还是专业开发者，都能轻松上手使用这项技术。"
     }
   },
   "cta": {
-    "title": "准备创作您的吉卜力杰作？",
-    "description": "加入已经在创作神奇吉卜力风格艺术作品的数千名用户",
-    "button": "免费开始创作"
+    "title": "准备探索无限视野？",
+    "description": "加入Earth Zoom AI生态圈，开启从微观到宏观的视觉创新之旅",
+    "buttons": {
+      "exploreFeatures": "探索核心功能",
+      "viewApplications": "查看应用案例",
+      "getTechnicalResources": "获取技术资源"
+    }
   },
   "footer": {
-    "about": "关于吉卜力AI",
+    "title": "Earth Zoom AI",
+    "description": "突破视觉边界，探索从微观到宏观的无限可能",
+    "quickLinks": "快速链接",
+    "concept": "核心概念",
+    "applications": "应用案例", 
+    "technology": "技术原理",
+    "resources": "开发资源",
+    "about": "关于我们",
+    "legalInfo": "法律信息",
     "terms": "服务条款",
     "privacy": "隐私政策",
     "contact": "联系我们",
-    "copyright": "© 2025 吉卜力AI。保留所有权利。"
-  },
-  "generatorPage": {
-    "title": "创建吉卜力风格图像",
-    "description": "将您的想法转化为神奇的吉卜力工作室风格艺术作品",
-    "textToImage": "文字生成图像",
-    "imageToImage": "图像转换",
-    "textPromptLabel": "描述您的图像",
-    "textPromptPlaceholder": "一个宁静的乡村，有一个小木屋，龙猫风格...",
-    "uploadImageLabel": "上传您的图像",
-    "uploadImageDescription": "拖放图像到这里，或点击选择",
-    "styleSelection": "选择吉卜力风格",
-    "generateButton": "生成图像",
-    "downloadButton": "下载",
-    "shareButton": "分享",
-    "styleOptions": {
-      "spiritedAway": "千与千寻",
-      "myNeighborTotoro": "龙猫",
-      "howlsMovingCastle": "哈尔的移动城堡",
-      "princessMononoke": "幽灵公主",
-      "kikisDeliveryService": "魔女宅急便",
-      "ponyo": "悬崖上的金鱼姬"
-    }
-  },
-  "galleryPage": {
-    "title": "吉卜力风格画廊",
-    "description": "探索社区创作的精彩吉卜力风格艺术作品",
-    "searchPlaceholder": "搜索作品或创作者...",
-    "filterAll": "全部风格",
-    "sortOptions": {
-      "newest": "最新",
-      "popular": "最受欢迎",
-      "oldest": "最早"
-    },
-    "noResults": "未找到匹配的作品",
-    "tryDifferent": "请尝试其他搜索条件或风格选择。",
-    "pagination": {
-      "previous": "上一页",
-      "next": "下一页"
-    },
-    "createdBy": "创作者"
-  },
-  "aboutPage": {
-    "title": "关于吉卜力AI",
-    "description": "探索我们的故事、使命和创作理念",
-    "ourStory": {
-      "title": "我们的故事",
-      "content1": "吉卜力AI诞生于对宫崎骏和吉卜力工作室作品的热爱。我们是一群热衷于动画艺术和人工智能的创作者，希望通过技术的力量，让更多人能够体验到创作吉卜力风格艺术作品的乐趣。",
-      "content2": "我们的团队由艺术家、工程师和设计师组成，共同致力于打造一个既尊重原创艺术，又能激发创新的平台。通过先进的AI技术，我们让每个人都能轻松创作出具有吉卜力风格的精美艺术作品。"
-    },
-    "ourMission": {
-      "title": "我们的使命",
-      "content": "我们的使命是通过人工智能技术，使吉卜力风格的艺术创作变得民主化和普及化，让每个人都能体验到创作的乐趣，同时尊重原创艺术的价值。",
-      "believe": "我们相信，技术应该服务于创造力，而不是限制它。通过吉卜力AI，我们希望能够：",
-      "point1": "让更多人能够接触和欣赏吉卜力风格的艺术",
-      "point2": "为艺术创作者提供新的灵感和工具",
-      "point3": "促进全球创意社区的交流和分享",
-      "point4": "推动AI艺术创作的边界和可能性"
-    },
-    "technology": {
-      "title": "技术与创新",
-      "feature1": {
-        "title": "先进的AI模型",
-        "description": "我们的AI模型经过数千幅吉卜力工作室原创作品的训练，能够精确捕捉吉卜力风格的细节、色彩和氛围，为用户提供最真实的吉卜力风格体验。"
-      },
-      "feature2": {
-        "title": "多样化风格选择",
-        "description": "我们提供多种吉卜力电影的风格选择，包括《千与千寻》、《龙猫》、《哈尔的移动城堡》等，让用户可以根据自己的喜好选择不同的艺术风格。"
-      },
-      "feature3": {
-        "title": "用户友好界面",
-        "description": "我们精心设计了简洁直观的用户界面，无论是技术专家还是艺术爱好者，都能轻松上手，享受创作的乐趣。"
-      },
-      "feature4": {
-        "title": "隐私与安全",
-        "description": "我们重视用户隐私和数据安全，采用先进的加密技术保护用户上传的图片和创作的作品，确保用户可以安心使用我们的服务。"
-      }
-    },
-    "team": {
-      "title": "我们的团队",
-      "member1": {
-        "name": "张明",
-        "role": "创始人 & AI研究员"
-      },
-      "member2": {
-        "name": "李华",
-        "role": "首席技术官"
-      },
-      "member3": {
-        "name": "王芳",
-        "role": "艺术总监"
-      }
-    },
-    "contact": {
-      "title": "联系我们",
-      "description": "我们非常欢迎您的反馈和建议。如果您有任何问题或想法，请随时与我们联系：",
-      "email": "contact@ghibliai.com",
-      "phone": "+86 123 4567 8910",
-      "address": "北京市海淀区中关村科技园",
-      "followUs": "关注我们"
-    }
-  },
+         "email": "contact@earthzoomai.org",
+     "location": "中国北京",
+     "copyright": "© 2025 Earth Zoom AI。保留所有权利。"
+   },
   "notFoundPage": {
     "title": "404",
     "subtitle": "页面不见了",
-    "description": "看起来您要找的页面已经被龙猫带走了！不用担心，您可以返回首页继续探索吉卜力的魔法世界。",
+    "description": "看起来您要找的页面已经消失在了无限缩放的视野中！不用担心，您可以返回首页继续探索Earth Zoom AI的世界。",
     "backToHome": "返回首页"
   }
 }

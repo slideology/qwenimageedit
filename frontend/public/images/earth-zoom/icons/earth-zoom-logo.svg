@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- 地球图标 -->
+  <circle cx="30" cy="30" r="20" fill="#1e40af" stroke="#7c3aed" stroke-width="2"/>
+  
+  <!-- 大陆轮廓（简化） -->
+  <path d="M20 25 Q25 20 30 25 Q35 20 40 25 Q35 30 30 35 Q25 30 20 25" fill="#0ea5e9"/>
+  <circle cx="35" cy="22" r="3" fill="#0ea5e9"/>
+  <circle cx="25" cy="32" r="2" fill="#0ea5e9"/>
+  
+  <!-- 缩放箭头效果 -->
+  <g transform="translate(45, 15)">
+    <!-- 外层箭头 -->
+    <path d="M0 15 L8 7 L6 5 L12 5 L12 11 L10 9 L2 17 Z" fill="#f59e0b" opacity="0.8"/>
+    <!-- 内层箭头 -->
+    <path d="M4 15 L10 9 L8 7 L12 7 L12 11 L10 9 Z" fill="#fbbf24"/>
+  </g>
+  
+  <!-- 文字部分 -->
+  <text x="70" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e40af">
+    Earth Zoom
+  </text>
+  <text x="70" y="45" font-family="Arial, sans-serif" font-size="14" fill="#7c3aed">
+    AI
+  </text>
+  
+  <!-- 装饰星点 -->
+  <circle cx="180" cy="15" r="1.5" fill="#f59e0b"/>
+  <circle cx="185" cy="25" r="1" fill="#7c3aed"/>
+  <circle cx="175" cy="35" r="1" fill="#1e40af"/>
+</svg> 

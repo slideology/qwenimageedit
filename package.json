@@ -1,0 +1,27 @@
+{
+  "name": "earth-zoom-ai",
+  "version": "1.0.0",
+  "description": "Earth Zoom AI - 探索从微观到宇宙的视觉革命网站",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "install:frontend": "cd frontend && npm install",
+    "clean": "rm -rf frontend/dist && rm -rf frontend/node_modules/.cache",
+    "deploy:prepare": "npm run clean && npm run install:frontend && npm run build",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "install:all": "npm install && cd frontend && npm install",
+    "test:frontend": "cd frontend && npm run test"
+  },
+  "keywords": ["earth-zoom-ai", "earth-zoom", "ai", "video-generation", "zoom-out", "space-perspective", "cosmic-zoom", "earth-ai"],
+  "author": "Earth Zoom AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+} 

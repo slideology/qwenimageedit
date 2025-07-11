@@ -1,8 +1,10 @@
 {
   "header": {
     "home": "Home",
-    "generator": "Image Generator",
-    "gallery": "Gallery",
+    "concept": "Core Concept",
+    "applications": "Applications",
+    "technology": "Technology",
+    "resources": "Resources",
     "about": "About Us",
     "login": "Login",
     "signup": "Sign Up"

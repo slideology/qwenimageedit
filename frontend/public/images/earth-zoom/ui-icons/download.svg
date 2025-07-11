@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 下载箭头主线 -->
+  <line x1="16" y1="6" x2="16" y2="22" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- 下载箭头头部 -->
+  <path d="M12 18 L16 22 L20 18" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- 底部托盘 -->
+  <path d="M8 26 L24 26" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- 装饰点 -->
+  <circle cx="16" cy="4" r="1" fill="#f59e0b"/>
+</svg> 
