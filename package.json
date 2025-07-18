@@ -14,7 +14,16 @@
     "install:all": "npm install && cd frontend && npm install",
     "test:frontend": "cd frontend && npm run test"
   },
-  "keywords": ["earth-zoom-ai", "earth-zoom", "ai", "video-generation", "zoom-out", "space-perspective", "cosmic-zoom", "earth-ai"],
+  "keywords": [
+    "earth-zoom-ai",
+    "earth-zoom",
+    "ai",
+    "video-generation",
+    "zoom-out",
+    "space-perspective",
+    "cosmic-zoom",
+    "earth-ai"
+  ],
   "author": "Earth Zoom AI Team",
   "license": "MIT",
   "devDependencies": {
@@ -23,5 +32,8 @@
   "workspaces": [
     "frontend",
     "backend"
-  ]
-} 
+  ],
+  "dependencies": {
+    "puppeteer": "^24.14.0"
+  }
+}
