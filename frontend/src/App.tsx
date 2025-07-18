@@ -6,11 +6,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import NotFoundPage from './pages/NotFoundPage';
 
-// Earth Zoom AI 页面引入
-import ConceptPage from './pages/ConceptPage';
-import ApplicationsPage from './pages/ApplicationsPage';
-import TechnologyPage from './pages/TechnologyPage';
-import ResourcesPage from './pages/ResourcesPage';
+// 保留的页面引入
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 
@@ -24,13 +20,15 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           
-          {/* Earth Zoom AI 页面路由 */}
-          <Route path="/concept" element={<ConceptPage />} />
-          <Route path="/applications" element={<ApplicationsPage />} />
-          <Route path="/technology" element={<TechnologyPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
+          {/* 博客功能保留 */}
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:postId" element={<BlogPostPage />} />
+
+          {/* 其他功能页面（如需要） */}
+          <Route path="/contact" element={<div className="min-h-screen bg-gray-950 text-white flex items-center justify-center"><div className="text-center"><h1 className="text-4xl font-bold mb-4">Contact Us</h1><p className="text-gray-400">Coming Soon</p></div></div>} />
+          <Route path="/pricing" element={<div className="min-h-screen bg-gray-950 text-white flex items-center justify-center"><div className="text-center"><h1 className="text-4xl font-bold mb-4">Pricing</h1><p className="text-gray-400">Coming Soon</p></div></div>} />
+          <Route path="/privacy-policy" element={<div className="min-h-screen bg-gray-950 text-white flex items-center justify-center"><div className="text-center"><h1 className="text-4xl font-bold mb-4">Privacy Policy</h1><p className="text-gray-400">Coming Soon</p></div></div>} />
+          <Route path="/terms-of-service" element={<div className="min-h-screen bg-gray-950 text-white flex items-center justify-center"><div className="text-center"><h1 className="text-4xl font-bold mb-4">Terms of Service</h1><p className="text-gray-400">Coming Soon</p></div></div>} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
