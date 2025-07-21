@@ -10,16 +10,16 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'Earth Zoom AI - 智能地球缩放与视频生成工具',
-  description = '使用Earth Zoom AI探索地球的每个角落。我们的AI驱动技术让您能够创建令人惊叹的地球缩放视频，适用于教育、展示和创意项目。',
+  title = 'ZOOM EARTH AI - Intelligent Earth Zoom and Video Generation Tool',
+  description = 'Explore every corner of Earth with ZOOM EARTH AI. Our AI-driven technology enables you to create stunning earth zoom videos for education, presentations, and creative projects.',
   image = 'https://earthzoomai.org/images/earth-zoom/social/og-image.jpg',
   url = typeof window !== 'undefined' ? window.location.href : 'https://earthzoomai.org',
   type = 'website',
   structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    'name': 'Earth Zoom AI',
-    'description': '智能地球缩放与视频生成工具',
+    'name': 'ZOOM EARTH AI',
+    'description': 'Intelligent Earth Zoom and Video Generation Tool',
     'applicationCategory': 'MultimediaApplication',
     'operatingSystem': 'Web',
     'offers': {
@@ -29,16 +29,16 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     },
     'author': {
       '@type': 'Organization',
-      'name': 'Earth Zoom AI Team',
+      'name': 'ZOOM EARTH AI Team',
       'url': 'https://earthzoomai.org'
     }
   }
 }) => {
   useEffect(() => {
-    // 设置页面标题
+    // Set page title
     document.title = title;
 
-    // 创建或更新meta标签的函数
+    // Function to create or update meta tags
     const setMetaTag = (name: string, content: string, isProperty = false) => {
       const attribute = isProperty ? 'property' : 'name';
       let meta = document.querySelector(`meta[${attribute}="${name}"]`) as HTMLMetaElement;
@@ -51,32 +51,32 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       meta.content = content;
     };
 
-    // 设置基本meta标签
+    // Set basic meta tags
     setMetaTag('description', description);
     setMetaTag('viewport', 'width=device-width, initial-scale=1.0');
     setMetaTag('theme-color', '#0f172a');
     setMetaTag('robots', 'index, follow');
     setMetaTag('googlebot', 'index, follow');
-    setMetaTag('keywords', 'Earth Zoom AI, 地球缩放, AI视频生成, 地理可视化, 卫星图像, 地球观察');
-    setMetaTag('author', 'Earth Zoom AI Team');
-    setMetaTag('copyright', 'Earth Zoom AI');
+    setMetaTag('keywords', 'ZOOM EARTH AI, earth zoom, AI video generation, geographic visualization, satellite imagery, earth observation');
+    setMetaTag('author', 'ZOOM EARTH AI Team');
+    setMetaTag('copyright', 'ZOOM EARTH AI');
 
-    // 设置Open Graph标签
+    // Set Open Graph tags
     setMetaTag('og:title', title, true);
     setMetaTag('og:description', description, true);
     setMetaTag('og:image', image, true);
     setMetaTag('og:url', url, true);
     setMetaTag('og:type', type, true);
-    setMetaTag('og:site_name', 'Earth Zoom AI', true);
+    setMetaTag('og:site_name', 'ZOOM EARTH AI', true);
 
-    // 设置Twitter Card标签
+    // Set Twitter Card tags
     setMetaTag('twitter:card', 'summary_large_image');
-    setMetaTag('twitter:site', '@EarthZoomAI');
+    setMetaTag('twitter:site', '@ZoomEarthAI');
     setMetaTag('twitter:title', title);
     setMetaTag('twitter:description', description);
     setMetaTag('twitter:image', image);
 
-    // 设置结构化数据
+    // Set structured data
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement;
     if (!structuredDataScript) {
       structuredDataScript = document.createElement('script');
@@ -85,7 +85,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     }
     structuredDataScript.textContent = JSON.stringify(structuredData);
 
-    // 设置canonical链接
+    // Set canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -94,13 +94,13 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     }
     canonicalLink.href = url;
 
-    // 清理函数
+    // Cleanup function
     return () => {
-      // 这里可以添加清理逻辑，如果需要的话
+      // Add cleanup logic here if needed
     };
   }, [title, description, image, url, type, structuredData]);
 
-  return null; // 这个组件不渲染任何内容
+  return null; // This component doesn't render any content
 };
 
 export default SEOHead; 

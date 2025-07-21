@@ -36,14 +36,14 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
     setStatus('submitting');
     
     try {
-      // 记录分析事件
+      // Record analytics event
       analytics.event({
         category: 'Contact',
         action: 'Form Submit',
         label: formData.subject
       });
 
-      // TODO: 实现实际的表单提交逻辑
+      // TODO: Implement actual form submission logic
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -53,7 +53,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
       });
 
       if (!response.ok) {
-        throw new Error('提交失败，请稍后重试');
+        throw new Error('Submission failed. Please try again later.');
       }
 
       setStatus('success');
@@ -65,7 +65,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
       });
     } catch (error) {
       setStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : '提交失败，请稍后重试');
+      setErrorMessage(error instanceof Error ? error.message : 'Submission failed. Please try again later.');
     }
   };
 
@@ -73,7 +73,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
     <form onSubmit={handleSubmit} className={`space-y-6 ${className}`}>
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-200">
-          姓名
+          Name
         </label>
         <input
           type="text"
@@ -88,7 +88,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-200">
-          邮箱
+          Email
         </label>
         <input
           type="email"
@@ -103,7 +103,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
 
       <div>
         <label htmlFor="subject" className="block text-sm font-medium text-gray-200">
-          主题
+          Subject
         </label>
         <select
           id="subject"
@@ -113,18 +113,18 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
           onChange={handleChange}
           className="mt-1 block w-full rounded-md border-gray-700 bg-gray-800 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
         >
-          <option value="">请选择主题</option>
-          <option value="general">一般咨询</option>
-          <option value="technical">技术支持</option>
-          <option value="business">商务合作</option>
-          <option value="feedback">产品反馈</option>
-          <option value="other">其他</option>
+          <option value="">Select a subject</option>
+          <option value="general">General Inquiry</option>
+          <option value="technical">Technical Support</option>
+          <option value="business">Business Cooperation</option>
+          <option value="feedback">Product Feedback</option>
+          <option value="other">Other</option>
         </select>
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-200">
-          消息内容
+          Message
         </label>
         <textarea
           id="message"
@@ -141,7 +141,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
         <div className="rounded-md bg-red-50 p-4">
           <div className="flex">
             <div className="ml-3">
-              <h3 className="text-sm font-medium text-red-800">提交失败</h3>
+              <h3 className="text-sm font-medium text-red-800">Submission Failed</h3>
               <div className="mt-2 text-sm text-red-700">
                 <p>{errorMessage}</p>
               </div>
@@ -154,9 +154,9 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
         <div className="rounded-md bg-green-50 p-4">
           <div className="flex">
             <div className="ml-3">
-              <h3 className="text-sm font-medium text-green-800">提交成功</h3>
+              <h3 className="text-sm font-medium text-green-800">Submission Successful</h3>
               <div className="mt-2 text-sm text-green-700">
-                <p>我们会尽快回复您的消息。</p>
+                <p>We will respond to your message as soon as possible.</p>
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
               : 'bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
           }`}
         >
-          {status === 'submitting' ? '提交中...' : '提交'}
+          {status === 'submitting' ? 'Submitting...' : 'Submit'}
         </button>
       </div>
     </form>

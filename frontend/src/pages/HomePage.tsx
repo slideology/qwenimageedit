@@ -53,15 +53,15 @@ const HomePage = () => {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How does Zoom Earth AI create the zoom-out effect?",
+          "name": "How does ZOOM EARTH AI create the zoom-out effect?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Earth Zoom AI uses advanced artificial intelligence to analyze your image and create seamless zoom-out sequences. Our 4-layer AI architecture analyzes depth, plans optimal paths, generates intermediate frames, and synthesizes professional-quality videos automatically."
+            "text": "ZOOM EARTH AI uses advanced artificial intelligence to analyze your image and create seamless zoom-out sequences. Our 4-layer AI architecture analyzes depth, plans optimal paths, generates intermediate frames, and synthesizes professional-quality videos automatically."
           }
         },
         {
           "@type": "Question",
-          "name": "What types of images work best with Zoom Earth AI?",
+          "name": "What types of images work best with ZOOM EARTH AI?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "For optimal results, use high-resolution images (1920x1080 or higher) with clear subjects and good composition. Images with distinct focal points, rich details, and contrasting elements work best. We support JPG, PNG, WebP formats up to 50MB."
@@ -69,10 +69,10 @@ const HomePage = () => {
         },
         {
           "@type": "Question",
-          "name": "What makes Zoom Earth AI different from other video effects tools?",
+          "name": "What makes ZOOM EARTH AI different from other video effects tools?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Unlike traditional video effects, Earth Zoom AI uses proprietary AI algorithms to create infinite zoom capabilities with unprecedented visual continuity. Our technology automatically handles complex depth analysis and content generation for professional results."
+            "text": "Unlike traditional video effects, ZOOM EARTH AI uses proprietary AI algorithms to create infinite zoom capabilities with unprecedented visual continuity. Our technology automatically handles complex depth analysis and content generation for professional results."
           }
         },
         {
@@ -80,12 +80,12 @@ const HomePage = () => {
           "name": "How can I optimize my content for different platforms?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Earth Zoom AI offers optimized export presets for all major platforms: vertical videos for TikTok and Instagram Reels, landscape format for YouTube, and custom aspect ratios. All outputs maintain perfect quality across platforms."
+            "text": "ZOOM EARTH AI offers optimized export presets for all major platforms: vertical videos for TikTok and Instagram Reels, landscape format for YouTube, and custom aspect ratios. All outputs maintain perfect quality across platforms."
           }
         },
         {
           "@type": "Question",
-          "name": "How does Zoom Earth AI handle data privacy and security?",
+          "name": "How does ZOOM EARTH AI handle data privacy and security?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We maintain enterprise-grade security with SOC 2 Type II compliance. All uploads are encrypted with AES-256, processed in secure environments, and automatically deleted after 30 days. We're GDPR compliant with EU data residency options."
@@ -93,7 +93,7 @@ const HomePage = () => {
         },
         {
           "@type": "Question",
-          "name": "What support resources does Zoom Earth AI provide?",
+          "name": "What support resources does ZOOM EARTH AI provide?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We offer comprehensive support including 24/7 live chat, video tutorials, technical documentation, community forum, and webinar training sessions. Professional plans include dedicated support with 4-hour response time."
@@ -150,7 +150,7 @@ const HomePage = () => {
             {/* 主标题 */}
             <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent leading-tight animate-fade-in">
               ZOOM EARTH AI
-                  </h1>
+            </h1>
               
             {/* 副标题 */}
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{animationDelay: '0.3s'}}>
@@ -452,27 +452,27 @@ const HomePage = () => {
           <div className="max-w-4xl mx-auto">
             {[
               {
-                question: "How does Zoom Earth AI create the zoom-out effect?",
-                answer: "Earth Zoom AI uses advanced artificial intelligence to analyze your image and create seamless zoom-out sequences. Our 4-layer AI architecture analyzes depth, plans optimal paths, generates intermediate frames, and synthesizes professional-quality videos automatically."
+                question: "How does ZOOM EARTH AI create the zoom-out effect?",
+                answer: "ZOOM EARTH AI uses advanced artificial intelligence to analyze your image and create seamless zoom-out sequences. Our 4-layer AI architecture analyzes depth, plans optimal paths, generates intermediate frames, and synthesizes professional-quality videos automatically."
               },
               {
-                question: "What types of images work best with Zoom Earth AI?",
+                question: "What types of images work best with ZOOM EARTH AI?",
                 answer: "For optimal results, use high-resolution images (1920x1080 or higher) with clear subjects and good composition. Images with distinct focal points, rich details, and contrasting elements work best. We support JPG, PNG, WebP formats up to 50MB."
               },
               {
-                question: "What makes Zoom Earth AI different from other video effects tools?",
-                answer: "Unlike traditional video effects, Earth Zoom AI uses proprietary AI algorithms to create infinite zoom capabilities with unprecedented visual continuity. Our technology automatically handles complex depth analysis and content generation for professional results."
+                question: "What makes ZOOM EARTH AI different from other video effects tools?",
+                answer: "Unlike traditional video effects, ZOOM EARTH AI uses proprietary AI algorithms to create infinite zoom capabilities with unprecedented visual continuity. Our technology automatically handles complex depth analysis and content generation for professional results."
               },
               {
                 question: "How can I optimize my content for different platforms?",
-                answer: "Earth Zoom AI offers optimized export presets for all major platforms: vertical videos for TikTok and Instagram Reels, landscape format for YouTube, and custom aspect ratios. All outputs maintain perfect quality across platforms."
+                answer: "ZOOM EARTH AI offers optimized export presets for all major platforms: vertical videos for TikTok and Instagram Reels, landscape format for YouTube, and custom aspect ratios. All outputs maintain perfect quality across platforms."
               },
               {
-                question: "How does Zoom Earth AI handle data privacy and security?",
+                question: "How does ZOOM EARTH AI handle data privacy and security?",
                 answer: "We maintain enterprise-grade security with SOC 2 Type II compliance. All uploads are encrypted with AES-256, processed in secure environments, and automatically deleted after 30 days. We're GDPR compliant with EU data residency options."
               },
               {
-                question: "What support resources does Zoom Earth AI provide?",
+                question: "What support resources does ZOOM EARTH AI provide?",
                 answer: "We offer comprehensive support including 24/7 live chat, video tutorials, technical documentation, community forum, and webinar training sessions. Professional plans include dedicated support with 4-hour response time."
               }
             ].map((faq, index) => (
@@ -513,7 +513,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="animate-on-scroll">
-              <h3 className="text-xl font-bold text-white mb-4">Zoom Earth AI</h3>
+              <h3 className="text-xl font-bold text-white mb-4">ZOOM EARTH AI</h3>
               <p className="text-gray-400">
                 Transform your content with stunning Earth zoom effects. Create professional-quality videos in minutes.
               </p>
@@ -568,7 +568,7 @@ const HomePage = () => {
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center animate-on-scroll">
             <p className="text-gray-400">
-              © 2025 Zoom Earth AI. All rights reserved.
+              © 2025 ZOOM EARTH AI. All rights reserved.
             </p>
           </div>
         </div>

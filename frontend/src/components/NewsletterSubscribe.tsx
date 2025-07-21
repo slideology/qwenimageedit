@@ -9,8 +9,8 @@ interface NewsletterSubscribeProps {
 
 export const NewsletterSubscribe: React.FC<NewsletterSubscribeProps> = ({
   className = '',
-  title = '订阅我们的最新动态',
-  description = '及时获取Earth Zoom AI的最新功能、教程和使用技巧。'
+  title = 'Subscribe to Our Updates',
+  description = 'Get the latest features, tutorials, and tips from ZOOM EARTH AI.'
 }) => {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -21,14 +21,14 @@ export const NewsletterSubscribe: React.FC<NewsletterSubscribeProps> = ({
     setStatus('submitting');
 
     try {
-      // 记录分析事件
+      // Record analytics event
       analytics.event({
         category: 'Newsletter',
         action: 'Subscribe',
         label: email
       });
 
-      // TODO: 实现实际的订阅逻辑
+      // TODO: Implement actual subscription logic
       const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
@@ -38,14 +38,14 @@ export const NewsletterSubscribe: React.FC<NewsletterSubscribeProps> = ({
       });
 
       if (!response.ok) {
-        throw new Error('订阅失败，请稍后重试');
+        throw new Error('Subscription failed. Please try again later.');
       }
 
       setStatus('success');
       setEmail('');
     } catch (error) {
       setStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : '订阅失败，请稍后重试');
+      setErrorMessage(error instanceof Error ? error.message : 'Subscription failed. Please try again later.');
     }
   };
 
@@ -62,7 +62,7 @@ export const NewsletterSubscribe: React.FC<NewsletterSubscribeProps> = ({
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="输入您的邮箱地址"
+            placeholder="Enter your email address"
             required
             className="flex-1 rounded-md border-gray-700 bg-gray-800 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500"
           />
@@ -75,14 +75,14 @@ export const NewsletterSubscribe: React.FC<NewsletterSubscribeProps> = ({
                 : 'bg-blue-600 hover:bg-blue-700'
             }`}
           >
-            {status === 'submitting' ? '订阅中...' : '订阅'}
+            {status === 'submitting' ? 'Subscribing...' : 'Subscribe'}
           </button>
         </div>
 
         {status === 'success' && (
           <div className="mt-4 p-4 rounded-md bg-green-50">
             <p className="text-sm text-green-800">
-              订阅成功！感谢您的关注。
+              Subscription successful! Thank you for subscribing.
             </p>
           </div>
         )}
@@ -96,12 +96,12 @@ export const NewsletterSubscribe: React.FC<NewsletterSubscribeProps> = ({
         )}
 
         <p className="mt-4 text-sm text-gray-400 text-center">
-          我们尊重您的隐私，您可以随时取消订阅。
-          查看我们的
+          We respect your privacy. You can unsubscribe at any time.
+          View our
           <a href="/privacy-policy" className="text-blue-400 hover:text-blue-300 ml-1">
-            隐私政策
+            Privacy Policy
           </a>
-          。
+          .
         </p>
       </form>
     </div>
