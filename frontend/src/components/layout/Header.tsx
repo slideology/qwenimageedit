@@ -122,12 +122,14 @@ const Header = () => {
           {/* 用户操作区 */}
           <div className="hidden md:flex items-center space-x-4">
             <LanguageSwitcher />
-            <button 
-              onClick={() => scrollToSection('features')}
+            <a 
+              href="https://pollo.ai?ref=ytayndd"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               Try Now
-            </button>
+            </a>
           </div>
           
           {/* 移动端菜单按钮 */}
@@ -182,12 +184,14 @@ const Header = () => {
                 <div className="py-2">
                   <LanguageSwitcher />
                 </div>
-                <button 
-                  onClick={() => scrollToSection('features')}
+                <a 
+                  href="https://pollo.ai?ref=ytayndd"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-left"
                 >
                   Try Now
-                </button>
+                </a>
               </div>
             </nav>
           </div>
