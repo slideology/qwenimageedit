@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 /**
- * Earth Zoom AI 单页应用导航栏组件
+ * ZOOM EARTH AI 单页应用导航栏组件
  * 适配单页应用，包含锚点导航和固定导航栏效果
+ * 支持AffiliateBanner的动态高度调整
  */
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [bannerHeight, setBannerHeight] = useState(0);
   
   // 导航链接数据 - 改为锚点导航
   const navLinks = [
@@ -19,8 +21,13 @@ const Header = () => {
     { name: 'FAQ', path: '#faq' },
   ];
   
-  // 监听滚动事件，实现固定导航栏效果
+  // 监听滚动事件和Banner高度变化
   useEffect(() => {
+    const updateBannerHeight = () => {
+      const bannerElement = document.querySelector('[class*="bg-gradient-to-r from-indigo-500"]');
+      setBannerHeight(bannerElement ? bannerElement.clientHeight : 0);
+    };
+    
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 50);
@@ -39,8 +46,23 @@ const Header = () => {
       setActiveSection(currentSection || '');
     };
 
+    // 初始化Banner高度
+    updateBannerHeight();
+    
+    // 监听窗口大小变化和滚动
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', updateBannerHeight);
+    
+    // 使用MutationObserver监听Banner的显示/隐藏
+    const observer = new MutationObserver(updateBannerHeight);
+    const targetNode = document.body;
+    observer.observe(targetNode, { childList: true, subtree: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', updateBannerHeight);
+      observer.disconnect();
+    };
   }, []);
   
   // 判断当前导航链接是否激活
@@ -64,9 +86,12 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
+    <header 
+      className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
+        isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      }`}
+      style={{ top: `${bannerHeight}px` }}
+    >
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo区域 */}

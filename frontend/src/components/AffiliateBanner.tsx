@@ -2,50 +2,50 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 /**
- * AffiliateBanner组件 - 显示联盟计划推广横幅
+ * AffiliateBanner Component - Display affiliate program promotional banner
  * 
- * 功能：
- * 1. 显示视频AI生成服务的推广信息
- * 2. 提供"免费试用"按钮链接到合作伙伴网站
- * 3. 支持关闭功能，并在localStorage中保存用户偏好
- * 4. 7天后自动重置用户偏好，再次显示横幅
- * 5. 完全响应式，在移动端和桌面端都有良好表现
+ * Features:
+ * 1. Display promotional information for video AI generation services
+ * 2. Provide "Try Free" button linking to partner website
+ * 3. Support close functionality with localStorage user preference
+ * 4. Auto-reset user preference after 7 days, redisplay banner
+ * 5. Fully responsive, performs well on both mobile and desktop
  */
 const AffiliateBanner: React.FC = () => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // 检查横幅是否之前被关闭
+    // Check if banner was previously closed
     const bannerClosed = localStorage.getItem('affiliate_banner_closed');
     
-    // 如果之前没有关闭，则显示横幅
+    // Show banner if it wasn't closed before
     if (bannerClosed !== 'true') {
       setIsVisible(true);
     }
   }, []);
 
-  // 处理关闭横幅
+  // Handle closing the banner
   const handleClose = () => {
     setIsVisible(false);
-    // 在localStorage中存储用户偏好
+    // Store user preference in localStorage
     localStorage.setItem('affiliate_banner_closed', 'true');
     
-    // 7天后重置用户偏好
+    // Reset user preference after 7 days
     setTimeout(() => {
       localStorage.removeItem('affiliate_banner_closed');
     }, 7 * 24 * 60 * 60 * 1000);
   };
 
-  // 如果横幅不可见，则不渲染任何内容
+  // If banner is not visible, render nothing
   if (!isVisible) {
     return null;
   }
 
   return (
-    <div className="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-3 px-4 shadow-md relative">
+    <div className="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-3 px-4 shadow-md relative z-50 fixed top-0 left-0 right-0">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">
-        {/* 横幅内容 */}
+        {/* Banner content */}
         <div className="flex items-center space-x-2 mb-2 sm:mb-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-video">
             <path d="m22 8-6 4 6 4V8Z"/>
@@ -54,7 +54,7 @@ const AffiliateBanner: React.FC = () => {
           <p className="font-medium">{t('affiliateBanner.message', 'Free to Generate AI Video Online Now')}</p>
         </div>
         
-        {/* 行动号召按钮 */}
+        {/* Call to action button */}
         <a 
           href="https://pollo.ai?ref=ytayndd" 
           className="bg-white text-purple-600 hover:bg-gray-100 transition-colors duration-300 px-4 py-1.5 rounded-full font-medium text-sm shadow-sm"
@@ -64,7 +64,7 @@ const AffiliateBanner: React.FC = () => {
           {t('affiliateBanner.cta', 'Try it Free')}
         </a>
         
-        {/* 关闭按钮 */}
+        {/* Close button */}
         <button 
           onClick={handleClose}
           className="absolute top-1 right-2 text-white hover:text-gray-200 transition-colors duration-300"

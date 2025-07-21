@@ -124,7 +124,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden min-h-screen flex items-center">
+      <section className="relative py-32 pt-40 overflow-hidden min-h-screen flex items-center">
         {/* 背景效果 */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-gray-900"></div>
         <div className="absolute inset-0 bg-[url('/images/earth-zoom/backgrounds/stars-texture.png')] opacity-20"></div>
