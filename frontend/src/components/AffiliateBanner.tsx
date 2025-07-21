@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 /**
  * AffiliateBanner Component - Display affiliate program promotional banner
@@ -12,7 +11,6 @@ import { useTranslation } from 'react-i18next';
  * 5. Fully responsive, performs well on both mobile and desktop
  */
 const AffiliateBanner: React.FC = () => {
-  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -51,7 +49,7 @@ const AffiliateBanner: React.FC = () => {
             <path d="m22 8-6 4 6 4V8Z"/>
             <rect width="14" height="12" x="2" y="6" rx="2" ry="2"/>
           </svg>
-          <p className="font-medium">{t('affiliateBanner.message', 'Free to Generate AI Video Online Now')}</p>
+          <p className="font-medium">Free to Generate AI Video Online Now</p>
         </div>
         
         {/* Call to action button */}
@@ -61,14 +59,14 @@ const AffiliateBanner: React.FC = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          {t('affiliateBanner.cta', 'Try it Free')}
+          Try it Free
         </a>
         
         {/* Close button */}
         <button 
           onClick={handleClose}
           className="absolute top-1 right-2 text-white hover:text-gray-200 transition-colors duration-300"
-          aria-label={t('affiliateBanner.close', 'Close banner')}
+          aria-label="Close banner"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
             <path d="M18 6 6 18"/>

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 /**
  * TwitterEmbeds组件 - 嵌入推特内容展示用户反馈
@@ -10,8 +9,6 @@ import { useTranslation } from 'react-i18next';
  * 3. 提供社交媒体互动入口
  */
 const TwitterEmbeds: React.FC = () => {
-  const { t } = useTranslation();
-
   useEffect(() => {
     // 动态加载推特嵌入脚本
     const script = document.createElement('script');
@@ -35,10 +32,10 @@ const TwitterEmbeds: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">
-            {t('twitterFeedback.title', 'Share Your Experience with ZOOM EARTH AI')}
+            Share Your Experience with ZOOM EARTH AI
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            {t('twitterFeedback.subtitle', 'Love using ZOOM EARTH AI? See what our users are saying on Twitter with #ZoomEarthAI!')}
+            Love using ZOOM EARTH AI? See what our users are saying on Twitter with #ZoomEarthAI!
           </p>
         </div>
 
