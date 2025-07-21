@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import NewsletterSubscribe from '../components/NewsletterSubscribe';
 
 /**
  * Earth Zoom AI 单页应用首页
@@ -498,6 +499,13 @@ const HomePage = () => {
             ))}
           </div>
                 </div>
+      </section>
+
+      {/* 在页面底部添加订阅区块 */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <NewsletterSubscribe />
+        </div>
       </section>
 
       {/* Footer */}
