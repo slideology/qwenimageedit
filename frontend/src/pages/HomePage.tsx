@@ -211,30 +211,36 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 animate-on-scroll">
-              <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-black/20">
-                  <span className="text-white font-semibold">Landmark Transition</span>
-                </div>
+              <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/images/showcase/landmark-transition.webp" 
+                  alt="Landmark Transition - From street view to satellite perspective"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-white">Landmark Transition</h3>
               <p className="text-gray-400">From street view to satellite perspective</p>
             </div>
             
             <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 animate-on-scroll" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-black/20">
-                  <span className="text-white font-semibold">Creative Effects</span>
-                </div>
+              <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/images/showcase/creative-effects.webp" 
+                  alt="Creative Effects - Artistic zoom sequences with style"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-white">Creative Effects</h3>
               <p className="text-gray-400">Artistic zoom sequences with style</p>
             </div>
             
             <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 animate-on-scroll" style={{animationDelay: '0.4s'}}>
-              <div className="aspect-video bg-gradient-to-br from-green-500 to-blue-600 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-black/20">
-                  <span className="text-white font-semibold">Advanced Features</span>
-                </div>
+              <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/images/showcase/advanced-features.webp" 
+                  alt="Advanced Features - Professional-grade zoom capabilities"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-white">Advanced Features</h3>
               <p className="text-gray-400">Professional-grade zoom capabilities</p>
