@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 /**
- * Earth Zoom AI 博客文章详情页面
- * 展示单篇博客文章的完整内容
+ * ZOOM EARTH AI Blog Post Detail Page
+ * Display complete content of individual blog posts
  */
 const BlogPostPage: React.FC = () => {
   const { postId } = useParams<{ postId: string }>();
@@ -13,14 +13,14 @@ const BlogPostPage: React.FC = () => {
   const blogPosts = {
     'ai-video-generation-revolution': {
       id: 'ai-video-generation-revolution',
-      title: 'The AI Video Generation Revolution: How Earth Zoom AI is Changing Visual Storytelling',
+      title: 'The AI Video Generation Revolution: How ZOOM EARTH AI is Changing Visual Storytelling',
       excerpt: 'Discover how artificial intelligence is transforming video creation, from simple images to stunning cosmic zoom effects that captivate audiences worldwide.',
       content: `
         <h2>Introduction: The Dawn of AI-Powered Visual Storytelling</h2>
-        <p>The landscape of video creation has undergone a revolutionary transformation in recent years, driven by breakthroughs in artificial intelligence and machine learning. At the forefront of this revolution stands Earth Zoom AI, a groundbreaking platform that has redefined what's possible in automated video generation.</p>
+        <p>The landscape of video creation has undergone a revolutionary transformation in recent years, driven by breakthroughs in artificial intelligence and machine learning. At the forefront of this revolution stands ZOOM EARTH AI, a groundbreaking platform that has redefined what's possible in automated video generation.</p>
         
         <h2>The Technology Behind the Magic</h2>
-        <p>Earth Zoom AI leverages a sophisticated four-layer architecture that seamlessly transforms static images into dynamic, cosmic-scale video experiences:</p>
+        <p>ZOOM EARTH AI leverages a sophisticated four-layer architecture that seamlessly transforms static images into dynamic, cosmic-scale video experiences:</p>
         
         <h3>1. Image Analysis Layer</h3>
         <p>Our advanced computer vision algorithms analyze every pixel of the input image, identifying key elements, composition patterns, and optimal zoom trajectories. This process involves:</p>
@@ -55,7 +55,7 @@ const BlogPostPage: React.FC = () => {
         <h2>Impact Across Industries</h2>
         
         <h3>Educational Revolution</h3>
-        <p>Universities and educational institutions have reported remarkable results using Earth Zoom AI:</p>
+        <p>Universities and educational institutions have reported remarkable results using ZOOM EARTH AI:</p>
         <ul>
           <li><strong>95% improvement</strong> in student engagement with visual learning materials</li>
           <li><strong>87% increase</strong> in concept retention rates</li>
@@ -79,15 +79,15 @@ const BlogPostPage: React.FC = () => {
         </ul>
         
         <h2>The Science of Visual Impact</h2>
-        <p>Research in cognitive psychology reveals why Earth Zoom AI videos are so effective:</p>
+        <p>Research in cognitive psychology reveals why ZOOM EARTH AI videos are so effective:</p>
         
         <blockquote>
-          "The human brain is naturally drawn to scale transitions and perspective changes. Earth Zoom AI taps into fundamental cognitive patterns that have evolved over millions of years, creating an almost irresistible visual experience." 
+          "The human brain is naturally drawn to scale transitions and perspective changes. ZOOM EARTH AI taps into fundamental cognitive patterns that have evolved over millions of years, creating an almost irresistible visual experience." 
           <cite>- Dr. Emily Rodriguez, Cognitive Psychology Research Institute</cite>
         </blockquote>
         
         <h2>Technical Excellence and Performance</h2>
-        <p>Earth Zoom AI maintains industry-leading performance metrics:</p>
+        <p>ZOOM EARTH AI maintains industry-leading performance metrics:</p>
         <ul>
           <li><strong>99.7% accuracy</strong> in visual continuity maintenance</li>
           <li><strong>4K Ultra HD</strong> output quality as standard</li>
@@ -96,7 +96,7 @@ const BlogPostPage: React.FC = () => {
         </ul>
         
         <h2>Looking Forward: The Future of AI Video</h2>
-        <p>As we advance into 2024 and beyond, Earth Zoom AI continues to pioneer new frontiers in AI-powered video generation. Upcoming developments include:</p>
+        <p>As we advance into 2024 and beyond, ZOOM EARTH AI continues to pioneer new frontiers in AI-powered video generation. Upcoming developments include:</p>
         <ul>
           <li>Real-time video generation capabilities</li>
           <li>Enhanced multi-object tracking and zoom path optimization</li>
@@ -105,25 +105,25 @@ const BlogPostPage: React.FC = () => {
         </ul>
         
         <h2>Conclusion: Democratizing Professional Video Creation</h2>
-        <p>Earth Zoom AI represents more than just a technological advancement—it's a democratization of professional-quality video creation. By making sophisticated visual storytelling accessible to everyone, from educators to marketers to artists, we're enabling a new era of creative expression that was previously limited to high-budget productions.</p>
+        <p>ZOOM EARTH AI represents more than just a technological advancement—it's a democratization of professional-quality video creation. By making sophisticated visual storytelling accessible to everyone, from educators to marketers to artists, we're enabling a new era of creative expression that was previously limited to high-budget productions.</p>
         
-        <p>The revolution in AI video generation is just beginning, and Earth Zoom AI is proud to be leading this transformation. As we continue to innovate and refine our technology, we remain committed to our core mission: empowering creators worldwide to tell their stories with unprecedented visual impact and cosmic perspective.</p>
+        <p>The revolution in AI video generation is just beginning, and ZOOM EARTH AI is proud to be leading this transformation. As we continue to innovate and refine our technology, we remain committed to our core mission: empowering creators worldwide to tell their stories with unprecedented visual impact and cosmic perspective.</p>
       `,
       date: '2024-01-15',
       readTime: '8 min read',
       category: 'Technology',
       tags: ['AI Video', 'Technology', 'Innovation', 'Visual Storytelling'],
       image: '/images/earth-zoom/blog/ai-video-revolution.jpg',
-      author: 'Earth Zoom AI Research Team',
+      author: 'ZOOM EARTH AI Research Team',
       authorBio: 'Our research team consists of leading AI scientists, computer vision experts, and video technology specialists dedicated to advancing the field of automated video generation.'
     },
     'educational-applications-case-study': {
       id: 'educational-applications-case-study',
-      title: 'Transforming Education: A Case Study of Earth Zoom AI in Universities',
-      excerpt: 'Explore how leading universities are using Earth Zoom AI to create immersive learning experiences that improve student engagement by 95%.',
+      title: 'Transforming Education: A Case Study of ZOOM EARTH AI in Universities',
+      excerpt: 'Explore how leading universities are using ZOOM EARTH AI to create immersive learning experiences that improve student engagement by 95%.',
       content: `
         <h2>Executive Summary</h2>
-        <p>This comprehensive case study examines the implementation of Earth Zoom AI technology across five leading universities, documenting unprecedented improvements in student engagement, learning outcomes, and educational content effectiveness.</p>
+        <p>This comprehensive case study examines the implementation of ZOOM EARTH AI technology across five leading universities, documenting unprecedented improvements in student engagement, learning outcomes, and educational content effectiveness.</p>
         
         <h2>Participating Institutions</h2>
         <ul>
@@ -135,7 +135,7 @@ const BlogPostPage: React.FC = () => {
         </ul>
         
         <h2>Implementation Methodology</h2>
-        <p>Each institution integrated Earth Zoom AI into their curriculum over a 12-month period, following a structured implementation framework:</p>
+        <p>Each institution integrated ZOOM EARTH AI into their curriculum over a 12-month period, following a structured implementation framework:</p>
         
         <h3>Phase 1: Baseline Assessment (Months 1-2)</h3>
         <ul>
@@ -172,7 +172,7 @@ const BlogPostPage: React.FC = () => {
         <h2>Quantitative Results</h2>
         
         <h3>Student Engagement Metrics</h3>
-        <p>Across all participating institutions, Earth Zoom AI implementation yielded remarkable improvements:</p>
+        <p>Across all participating institutions, ZOOM EARTH AI implementation yielded remarkable improvements:</p>
         <ul>
           <li><strong>95% increase</strong> in average lecture attention span</li>
           <li><strong>87% improvement</strong> in assignment completion rates</li>
@@ -200,7 +200,7 @@ const BlogPostPage: React.FC = () => {
         
         <h3>Stanford University - Computer Science Department</h3>
         <blockquote>
-          "Earth Zoom AI has revolutionized how we teach complex algorithms and data structures. Students can now visualize abstract concepts from the micro-level code structure all the way to system-wide implementations. The 'zoom out' effect helps them understand the bigger picture in ways traditional teaching methods never could."
+          "ZOOM EARTH AI has revolutionized how we teach complex algorithms and data structures. Students can now visualize abstract concepts from the micro-level code structure all the way to system-wide implementations. The 'zoom out' effect helps them understand the bigger picture in ways traditional teaching methods never could."
           <cite>- Dr. Jennifer Walsh, Professor of Computer Science</cite>
         </blockquote>
         
@@ -212,7 +212,7 @@ const BlogPostPage: React.FC = () => {
         
         <h3>MIT - Astronomy Program</h3>
         <blockquote>
-          "Earth Zoom AI perfectly aligns with astronomical education. Starting from Earth-based observations and zooming out to show our place in the cosmic web has made astronomy more accessible and awe-inspiring for students."
+          "ZOOM EARTH AI perfectly aligns with astronomical education. Starting from Earth-based observations and zooming out to show our place in the cosmic web has made astronomy more accessible and awe-inspiring for students."
           <cite>- Dr. Sarah Kim, Professor of Astrophysics</cite>
         </blockquote>
         
@@ -253,7 +253,7 @@ const BlogPostPage: React.FC = () => {
         <h2>Student Feedback Highlights</h2>
         
         <p><strong>Emma Rodriguez, Stanford Computer Science Student:</strong><br>
-        "I never understood how my code fits into larger systems until I saw it visualized with Earth Zoom AI. It's like seeing the matrix for the first time - everything suddenly makes sense."</p>
+        "I never understood how my code fits into larger systems until I saw it visualized with ZOOM EARTH AI. It's like seeing the matrix for the first time - everything suddenly makes sense."</p>
         
         <p><strong>James Chen, Harvard Medical Student:</strong><br>
         "Studying anatomy used to be about memorizing isolated facts. Now I see how everything connects from molecules to the whole body. It's completely changed how I understand medicine."</p>
@@ -283,7 +283,7 @@ const BlogPostPage: React.FC = () => {
         
         <h2>Return on Investment Analysis</h2>
         
-        <p>The economic impact of Earth Zoom AI implementation proved substantial:</p>
+        <p>The economic impact of ZOOM EARTH AI implementation proved substantial:</p>
         <ul>
           <li><strong>Content Creation Efficiency:</strong> $2.3M saved annually across all institutions</li>
           <li><strong>Student Retention Improvement:</strong> $1.8M additional revenue from increased enrollment</li>
@@ -293,7 +293,7 @@ const BlogPostPage: React.FC = () => {
         
         <h2>Future Expansion Plans</h2>
         
-        <p>Based on the success of this pilot program, participating institutions have committed to expanding Earth Zoom AI integration:</p>
+        <p>Based on the success of this pilot program, participating institutions have committed to expanding ZOOM EARTH AI integration:</p>
         <ul>
           <li>Extension to graduate-level programs</li>
           <li>Integration with virtual and augmented reality platforms</li>
@@ -303,7 +303,7 @@ const BlogPostPage: React.FC = () => {
         
         <h2>Conclusion and Recommendations</h2>
         
-        <p>This case study demonstrates that Earth Zoom AI technology delivers transformative results in educational settings. The combination of increased student engagement, improved learning outcomes, and enhanced faculty productivity creates a compelling case for widespread adoption in higher education.</p>
+        <p>This case study demonstrates that ZOOM EARTH AI technology delivers transformative results in educational settings. The combination of increased student engagement, improved learning outcomes, and enhanced faculty productivity creates a compelling case for widespread adoption in higher education.</p>
         
         <p><strong>Key Recommendations for Educational Institutions:</strong></p>
         <ol>
@@ -314,7 +314,7 @@ const BlogPostPage: React.FC = () => {
           <li>Create student feedback loops for continuous improvement</li>
         </ol>
         
-        <p>The evidence is clear: Earth Zoom AI represents a paradigm shift in educational technology, offering unprecedented opportunities to enhance learning experiences and outcomes across diverse academic disciplines.</p>
+        <p>The evidence is clear: ZOOM EARTH AI represents a paradigm shift in educational technology, offering unprecedented opportunities to enhance learning experiences and outcomes across diverse academic disciplines.</p>
       `,
       date: '2024-01-12',
       readTime: '6 min read',
@@ -332,7 +332,7 @@ const BlogPostPage: React.FC = () => {
       setPost(currentPost);
       
       // SEO优化 - 设置页面标题和描述
-      document.title = `${currentPost.title} | Earth Zoom AI Blog`;
+      document.title = `${currentPost.title} | ZOOM EARTH AI Blog`;
       
       // 更新meta描述
       const metaDescription = document.querySelector('meta[name="description"]');
@@ -359,7 +359,7 @@ const BlogPostPage: React.FC = () => {
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Earth Zoom AI",
+          "name": "ZOOM EARTH AI",
           "logo": {
             "@type": "ImageObject",
             "url": "https://earthzoomai.org/images/earth-zoom/logos/earth-zoom-ai-logo.png",
@@ -386,7 +386,7 @@ const BlogPostPage: React.FC = () => {
           },
           {
             "@type": "Thing",
-            "name": "Earth Zoom AI",
+            "name": "ZOOM EARTH AI",
             "description": "Revolutionary video generation platform"
           }
         ]

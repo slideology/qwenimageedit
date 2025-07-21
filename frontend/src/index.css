@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Earth Zoom AI 全局样式 */
+/* ZOOM EARTH AI Global Styles */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -43,7 +43,7 @@
   }
 }
 
-/* Earth Zoom AI 组件样式 */
+/* ZOOM EARTH AI Component Styles */
 @layer components {
   /* 主按钮样式 */
   .btn-primary {
@@ -80,7 +80,7 @@
     @apply max-w-7xl mx-auto px-4;
   }
   
-  /* Earth Zoom AI 动画效果 */
+  /* ZOOM EARTH AI Animation Effects */
   .float-animation {
     animation: float 6s ease-in-out infinite;
   }

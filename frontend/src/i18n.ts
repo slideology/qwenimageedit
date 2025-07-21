@@ -3,8 +3,6 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import enTranslation from './locales/en/translation.json';
-// 暂时移除中文翻译
-// import zhTranslation from './locales/zh/translation.json';
 
 i18n
   .use(LanguageDetector)
@@ -14,12 +12,8 @@ i18n
       en: {
         translation: enTranslation
       }
-      // 暂时移除中文选项
-      // zh: {
-      //   translation: zhTranslation
-      // }
     },
-    lng: 'en', // 强制使用英文
+    lng: 'en',
     fallbackLng: 'en',
     detection: {
       order: ['localStorage', 'navigator'],

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import NewsletterSubscribe from '../components/NewsletterSubscribe';
 
 /**
- * Earth Zoom AI 单页应用首页
- * 整合所有功能：Hero、Features、Showcase、Reviews、FAQ
- * 参考对标网站 https://zoomearthai.com/ 的结构
+ * ZOOM EARTH AI Single Page Application Homepage
+ * Integrates all features: Hero, Features, Showcase, Reviews, FAQ
+ * Reference structure from https://zoomearthai.com/
  */
 const HomePage = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);

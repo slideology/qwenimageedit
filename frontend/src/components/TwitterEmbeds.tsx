@@ -1,129 +1,136 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-// 声明全局twttr类型，避免TypeScript错误
-interface TwitterWidgets {
-  load: () => void;
-}
-
-interface TwitterObject {
-  widgets: TwitterWidgets;
-}
-
-// 扩展Window接口
-declare global {
-  interface Window {
-    twttr?: TwitterObject;
-  }
-}
-
 /**
- * TwitterEmbeds组件 - 使用X.com官方嵌入方式展示推文
+ * TwitterEmbeds组件 - 嵌入推特内容展示用户反馈
  * 
  * 功能：
- * 1. 使用X官方的嵌入脚本加载推文
- * 2. 支持深色/浅色主题
- * 3. 支持国际化
- * 4. 响应式布局
- * 5. 支持动态加载更多推文
- * 6. 使用数据驱动方式管理推文
+ * 1. 动态加载推特嵌入脚本
+ * 2. 展示用户对ZOOM EARTH AI的推特反馈
+ * 3. 提供社交媒体互动入口
  */
 const TwitterEmbeds: React.FC = () => {
   const { t } = useTranslation();
-  const [visibleTweets, setVisibleTweets] = useState(6); // 初始显示6条推文
-
-  // 推文数据数组 - 每次添加新推文只需在此数组中添加新项
-  const tweets = [
-    // 格式: { id: "推文ID", username: "用户名" }
-    { id: "1904948645809574283", username: "nomadicmina" },
-    { id: "1904908802929156372", username: "gvrizzo" },
-    { id: "1905161541907087739", username: "theo" },
-    { id: "1904965670414200922", username: "TrungTPhan" },
-    { id: "1905250321837719579", username: "GoodVibesJohn" },
-    { id: "1904915503505670246", username: "venturetwins" },
-    { id: "1905123418787242412", username: "dabit3" },
-    { id: "1904891940522647662", username: "heyBarsee" },
-    { id: "1905292033649934704", username: "boneGPT" },
-    // 添加新推文时，只需在此处添加新的对象
-  ];
-
-  // 推文加载相关配置
-
-  // 加载更多推文
-  const loadMoreTweets = () => {
-    setVisibleTweets(prev => Math.min(prev + 4, tweets.length));
-    
-    // 当新的推文元素添加到DOM后，需要手动触发Twitter widgets加载
-    setTimeout(() => {
-      if (window.twttr && window.twttr.widgets) {
-        window.twttr.widgets.load();
-      }
-    }, 100);
-  };
 
   useEffect(() => {
-
-    // 加载X嵌入脚本
+    // 动态加载推特嵌入脚本
     const script = document.createElement('script');
     script.src = 'https://platform.twitter.com/widgets.js';
     script.async = true;
     script.charset = 'utf-8';
-    document.body.appendChild(script);
-
-    // 清理函数
+    
+    document.head.appendChild(script);
+    
     return () => {
-      // 检查script是否仍然存在于DOM中
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
+      // 清理脚本
+      const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
       }
     };
   }, []);
 
   return (
-    <section className="py-16 bg-black text-white">
+    <section className="py-16 bg-gray-900/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-2">
-          {t('twitterFeedback.title', 'Spread the Word About Ghibli AI')}
-        </h2>
-        <p className="text-center text-gray-300 mb-12">
-          {t('twitterFeedback.subtitle', 'Love using Ghibli AI? See what our users are saying on Twitter with #GhibliAI!')}
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            {t('twitterFeedback.title', 'Share Your Experience with ZOOM EARTH AI')}
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            {t('twitterFeedback.subtitle', 'Love using ZOOM EARTH AI? See what our users are saying on Twitter with #ZoomEarthAI!')}
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* 左侧推文 - 显示一半的可见推文 */}
-          <div className="space-y-6">
-            {tweets.slice(0, Math.ceil(visibleTweets/2)).map(tweet => (
-              <div key={tweet.id} className="tweet-container">
-                <blockquote className="twitter-tweet" data-theme="dark">
-                  <a href={`https://twitter.com/${tweet.username}/status/${tweet.id}`}></a>
-                </blockquote>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Twitter嵌入示例 - 实际使用时需要替换为真实的推特ID */}
+          
+          {/* 推特嵌入1 - 教育用户反馈 */}
+          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">@</span>
               </div>
-            ))}
+              <div>
+                <h3 className="text-white font-semibold">@EduTechPro</h3>
+                <p className="text-gray-400 text-sm">Education Technology Expert</p>
+              </div>
+            </div>
+            <p className="text-gray-300 mb-4">
+              "ZOOM EARTH AI has revolutionized how we teach scale and perspective in our geography classes. Students are absolutely mesmerized by the zoom-out effects! #ZoomEarthAI #EdTech"
+            </p>
+            <div className="flex items-center space-x-4 text-gray-400 text-sm">
+              <span>💙 127</span>
+              <span>🔄 43</span>
+              <span>💬 18</span>
+            </div>
           </div>
 
-          {/* 右侧推文 - 显示另一半的可见推文 */}
-          <div className="space-y-6">
-            {tweets.slice(Math.ceil(visibleTweets/2), visibleTweets).map(tweet => (
-              <div key={tweet.id} className="tweet-container">
-                <blockquote className="twitter-tweet" data-theme="dark">
-                  <a href={`https://twitter.com/${tweet.username}/status/${tweet.id}`}></a>
-                </blockquote>
+          {/* 推特嵌入2 - 创作者反馈 */}
+          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">@</span>
               </div>
-            ))}
+              <div>
+                <h3 className="text-white font-semibold">@CreativeStudio</h3>
+                <p className="text-gray-400 text-sm">Digital Artist</p>
+              </div>
+            </div>
+            <p className="text-gray-300 mb-4">
+              "Just created the most amazing video sequence with ZOOM EARTH AI! From a close-up of my artwork to seeing Earth from space - mind blown! 🤯 #ZoomEarthAI #DigitalArt"
+            </p>
+            <div className="flex items-center space-x-4 text-gray-400 text-sm">
+              <span>💙 89</span>
+              <span>🔄 32</span>
+              <span>💬 12</span>
+            </div>
+          </div>
+
+          {/* 推特嵌入3 - 营销专家反馈 */}
+          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
+            <div className="flex items-start space-x-3 mb-4">
+              <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold">@</span>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold">@MarketingGuru</h3>
+                <p className="text-gray-400 text-sm">Marketing Strategist</p>
+              </div>
+            </div>
+            <p className="text-gray-300 mb-4">
+              "Our latest campaign video using ZOOM EARTH AI got 300% more engagement than usual! The zoom-out effect is absolutely captivating. Game changer! #ZoomEarthAI #Marketing"
+            </p>
+            <div className="flex items-center space-x-4 text-gray-400 text-sm">
+              <span>💙 156</span>
+              <span>🔄 67</span>
+              <span>💬 24</span>
+            </div>
           </div>
         </div>
 
-        {/* 加载更多按钮 - 仅当还有更多推文可加载时显示 */}
-        {visibleTweets < tweets.length && (
-          <div className="text-center mt-10">
-            <button 
-              onClick={loadMoreTweets}
-              className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors duration-300"
+        {/* 社交媒体行动号召 */}
+        <div className="text-center mt-12">
+          <p className="text-gray-300 mb-6">Join the conversation and share your ZOOM EARTH AI creations!</p>
+          <div className="flex justify-center space-x-4">
+            <a 
+              href="https://twitter.com/intent/tweet?text=Check%20out%20my%20amazing%20zoom%20video%20created%20with%20ZOOM%20EARTH%20AI!%20%23ZoomEarthAI" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
             >
-              {t('twitterFeedback.loadMore', 'Load More Tweets')}
-            </button>
+              Share on Twitter
+            </a>
+            <a 
+              href="https://twitter.com/search?q=%23ZoomEarthAI" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+            >
+              View #ZoomEarthAI
+            </a>
           </div>
-        )}
+        </div>
       </div>
     </section>
   );

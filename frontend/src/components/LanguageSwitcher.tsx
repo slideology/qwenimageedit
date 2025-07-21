@@ -2,8 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 /**
- * 语言切换组件
- * 暂时只显示英文
+ * Language Switcher Component
+ * Currently only displays English
  */
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
@@ -16,7 +16,7 @@ const LanguageSwitcher: React.FC = () => {
   return (
     <div className="flex space-x-2">
       <button
-        className="px-2 py-1 rounded text-sm bg-ghibli-blue text-white"
+        className="px-2 py-1 rounded text-sm bg-blue-600 text-white"
         disabled
         aria-label="English"
       >
