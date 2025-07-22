@@ -96,9 +96,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo区域 */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">Z</span>
-            </div>
+            <img
+              src="/favicon.ico"
+              alt="ZOOM EARTH AI Logo"
+              className="w-8 h-8 rounded-full"
+            />
             <span className="text-2xl font-bold text-white">ZOOM EARTH AI</span>
           </Link>
           
