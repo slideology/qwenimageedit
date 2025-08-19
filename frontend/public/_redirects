@@ -1,6 +1,10 @@
-# SPA路由重定向配置
-# 所有未匹配的路由都重定向到index.html，用于React Router支持
-/*    /index.html   200
+# 域名重定向规则
+# WWW重定向到非WWW
+https://www.qwenimageedit.art/*  https://qwenimageedit.art/:splat  301!
+
+# HTTP到HTTPS重定向
+http://qwenimageedit.art/*       https://qwenimageedit.art/:splat  301!
+http://www.qwenimageedit.art/*   https://qwenimageedit.art/:splat  301!
 
 # 特定重定向规则
 /home    /    301
@@ -8,4 +12,8 @@
 
 # 安全重定向
 /wp-admin/*    /    301
-/admin/*       /    301 
+/admin/*       /    301
+
+# SPA路由重定向配置
+# 所有未匹配的路由都重定向到index.html，用于React Router支持
+/*    /index.html   200 
