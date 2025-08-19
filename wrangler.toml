@@ -1,0 +1,14 @@
+# Cloudflare Pages 配置文件
+# 用于qwenimageedit.art部署
+
+[build]
+command = "npm run install:frontend && npm run build"
+cwd = ""
+
+[build.environment]
+NODE_VERSION = "20"
+NODE_ENV = "production"
+NPM_FLAGS = "--production=false"
+
+[env.production]
+NODE_VERSION = "20" 
