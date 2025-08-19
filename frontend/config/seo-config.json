@@ -65,8 +65,8 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "ZOOM EARTH AI",
-      "url": "https://earthzoomai.org",
-      "logo": "https://earthzoomai.org/images/logo.png",
+      "url": "https://qwenimageedit.art",
+      "logo": "https://qwenimageedit.art/images/logo.png",
       "description": "AI-powered Earth zoom video creation platform",
       "sameAs": [
         "https://twitter.com/zoomearthai",
@@ -77,18 +77,18 @@
         "@type": "ContactPoint",
         "telephone": "+1-555-0123",
         "contactType": "customer service",
-        "email": "contact@earthzoomai.org"
+        "email": "contact@qwenimageedit.art"
       }
     },
     "website": {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "ZOOM EARTH AI",
-      "url": "https://earthzoomai.org",
+      "url": "https://qwenimageedit.art",
       "description": "Create stunning Earth zoom videos with AI technology",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://earthzoomai.org/search?q={search_term_string}",
+        "target": "https://qwenimageedit.art/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
@@ -167,10 +167,10 @@
     ]
   },
   "hreflang": {
-    "en": "https://earthzoomai.org",
-    "es": "https://earthzoomai.org/es",
-    "fr": "https://earthzoomai.org/fr",
-    "de": "https://earthzoomai.org/de",
-    "zh": "https://earthzoomai.org/zh"
+    "en": "https://qwenimageedit.art",
+    "es": "https://qwenimageedit.art/es",
+    "fr": "https://qwenimageedit.art/fr",
+    "de": "https://qwenimageedit.art/de",
+    "zh": "https://qwenimageedit.art/zh"
   }
 }

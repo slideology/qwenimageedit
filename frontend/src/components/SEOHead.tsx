@@ -30,7 +30,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     'author': {
       '@type': 'Organization',
       'name': 'Qwen Image Edit Team',
-      'url': 'https://earthzoomai.org'
+      'url': 'https://qwenimageedit.art'
     }
   }
 }) => {

@@ -253,7 +253,7 @@ Qwen Image Edit 是一个专业的AI图像编辑技术展示网站，专注于�
 ## 📞 联系方式
 
 - 🌐 **官方网站**：[earthzoomai.org](https://earthzoomai.org)
-- 📧 **邮箱**：contact@earthzoomai.org  
+- 📧 **邮箱**：contact@qwenimageedit.art  
 - 🐙 **GitHub**：[github.com/earthzoomai](https://github.com/earthzoomai)
 - 🐦 **Twitter**：[@EarthZoomAI](https://twitter.com/EarthZoomAI)
 

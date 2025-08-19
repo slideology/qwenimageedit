@@ -22,7 +22,7 @@
 1. 点击 "Create a project"
 2. 选择 "Connect to Git" 
 3. 授权连接到GitHub账户
-4. 选择 `earthzoomai.org` 仓库
+4. 选择 `qwenimageedit` 仓库
 
 ### 步骤3: 配置构建设置 (1分钟)
 ```
@@ -40,11 +40,11 @@ Environment variables: NODE_ENV=production
 
 ## 🌍 域名配置 (可选，10分钟)
 
-### 如果你已有 earthzoomai.org 域名
+### 如果你已有 qwenimageedit.art 域名
 1. 在Cloudflare Pages项目中点击 "Custom domains"
-2. 添加域名: `earthzoomai.org`
+2. 添加域名: `qwenimageedit.art`
 3. 按指示配置DNS记录或转移域名管理
-4. 添加www重定向: `www.earthzoomai.org` → `earthzoomai.org`
+4. 添加www重定向: `www.qwenimageedit.art` → `qwenimageedit.art`
 
 ### DNS配置示例
 ```

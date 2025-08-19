@@ -89,7 +89,7 @@
 - [ ] 📝 创建Cloudflare账户
 - [ ] 🔗 连接GitHub仓库
 - [ ] ⚙️ 配置构建设置
-- [ ] 🌍 设置自定义域名(earthzoomai.org)
+- [ ] 🌍 设置自定义域名(qwenimageedit.art)
 - [ ] 📊 启用Web Analytics
 
 ### 第三步：域名和DNS配置
@@ -112,7 +112,7 @@
 1. 登录Cloudflare Dashboard
 2. 选择"Pages" → "Create a project"
 3. 连接GitHub账户
-4. 选择`earthzoomai.org`仓库
+4. 选择`qwenimageedit`仓库
 5. 配置构建设置：
    ```
    Framework preset: React
@@ -130,10 +130,10 @@ NPM_FLAGS=--production=false
 
 ### 2. 自定义域名配置
 
-#### earthzoomai.org域名设置
+#### qwenimageedit.art域名设置
 1. 在Cloudflare Pages项目中选择"Custom domains"
-2. 添加域名：`earthzoomai.org`
-3. 添加www重定向：`www.earthzoomai.org` → `earthzoomai.org`
+2. 添加域名：`qwenimageedit.art`
+3. 添加www重定向：`www.qwenimageedit.art` → `qwenimageedit.art`
 4. 等待DNS验证完成（通常5-10分钟）
 
 #### DNS记录配置（如果域名在其他服务商）
@@ -165,7 +165,7 @@ TTL: Auto
 ## 🎯 部署后验证清单
 
 ### 基础功能测试
-- [ ] 🌐 网站正常访问 (https://earthzoomai.org)
+- [ ] 🌐 网站正常访问 (https://qwenimageedit.art)
 - [ ] 📱 移动端响应式正常
 - [ ] 🔗 所有页面路由工作正常
 - [ ] 🧭 导航菜单功能正常

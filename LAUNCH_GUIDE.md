@@ -27,7 +27,7 @@
 # 输出目录: frontend/dist
 ```
 
-### 2. 域名配置 (earthzoomai.org)
+### 2. 域名配置 (qwenimageedit.art)
 - 配置A记录指向Vercel
 - 启用HTTPS/SSL证书
 - 设置www重定向
