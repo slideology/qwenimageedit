@@ -282,6 +282,13 @@ const HomePage = () => {
       {/* Showcase Section - 9大功能展示 */}
       <ShowcaseGrid />
       
+      {/* 广告区域 */}
+      <section className="py-8">
+        <div className="container mx-auto px-4 flex justify-center">
+          <div id="container-a7371640e16748925b59f8e00271b8ec" className="w-full max-w-4xl"></div>
+        </div>
+      </section>
+      
       {/* Features Section */}
       <section id="features" className="relative py-24 bg-gray-900/50">
         <div className="container mx-auto px-4">
@@ -559,6 +566,13 @@ const HomePage = () => {
             ))}
           </div>
                 </div>
+      </section>
+
+      {/* 底部广告区域 */}
+      <section className="py-8 bg-gray-900/20">
+        <div className="container mx-auto px-4 flex justify-center">
+          <div id="container-a7371640e16748925b59f8e00271b8ec" className="w-full max-w-4xl"></div>
+        </div>
       </section>
 
       {/* 在页面底部添加订阅区块 */}
