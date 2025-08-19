@@ -1,6 +1,6 @@
 # 域名重定向规则
-# WWW重定向到非WWW
-https://www.qwenimageedit.art/*  https://qwenimageedit.art/:splat  301!
+# 非WWW重定向到WWW (临时方案，直到主域名配置完成)
+# https://qwenimageedit.art/*  https://www.qwenimageedit.art/:splat  301!
 
 # HTTP到HTTPS重定向
 http://qwenimageedit.art/*       https://qwenimageedit.art/:splat  301!
