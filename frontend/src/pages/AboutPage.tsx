@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 /**
- * ZOOM EARTH AI About Us Page
- * Introduction to ZOOM EARTH AI's mission, team and technology philosophy
+ * Qwen Image Edit About Us Page
+ * Introduction to Qwen Image Edit's mission, team and technology philosophy
  */
 const AboutPage: React.FC = () => {
   return (
@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-bold text-space-dark mb-6">Breaking Visual Boundaries</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  ZOOM EARTH AI was born from a simple yet profound observation: human understanding of visual scale is often limited by our observation tools.
+                  Qwen Image Edit was born from a simple yet profound observation: human understanding of visual content is often limited by traditional editing tools.
                   We imagined, if we could create a technology that allows any image to seamlessly extend to Earth and even cosmic perspectives,
                   what kind of transformation would it bring to education, art, and science?
                 </p>
@@ -53,7 +53,7 @@ const AboutPage: React.FC = () => {
                 </p>
                 <blockquote className="border-l-4 border-earth-blue pl-6 italic text-gray-600">
                   "We believe that the best technology should expand the boundaries of human perception, not just mimic reality."
-                  <cite className="block mt-2 text-sm font-medium text-space-dark">- ZOOM EARTH AI Founding Team</cite>
+                                      <cite className="block mt-2 text-sm font-medium text-space-dark">- Qwen Image Edit Founding Team</cite>
                 </blockquote>
               </div>
               
@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
                 <div className="text-center">
                   <img 
                     src="/images/earth-zoom/icons/earth-globe.svg" 
-                    alt="ZOOM EARTH AI Vision" 
+                    alt="Qwen Image Edit Vision" 
                     className="w-32 h-32 mx-auto mb-6 animate-float"
                   />
                   <h3 className="text-xl font-bold text-space-dark mb-4">Technology Milestones</h3>
@@ -268,7 +268,7 @@ const AboutPage: React.FC = () => {
             <span className="text-gradient bg-gradient-to-r from-solar-gold to-stellar-silver bg-clip-text text-transparent"> Journey of Exploration</span>
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Whether you are a developer, designer, researcher, or creator, we welcome you to join the ZOOM EARTH AI ecosystem,
+                              Whether you are a developer, designer, researcher, or creator, we welcome you to join the Qwen Image Edit ecosystem,
             and explore the infinite possibilities of visual technology together.
           </p>
           

@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "browser": {
+      "command": "node",
+      "args": ["node_modules/@browsermcp/mcp/dist/index.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "context7": {
+      "command": "node",
+      "args": ["node_modules/@upstash/context7-mcp/dist/index.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  }
+}

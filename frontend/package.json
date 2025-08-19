@@ -1,7 +1,7 @@
 {
-  "name": "earth-zoom-ai-frontend",
-  "version": "2.0.0",
-  "description": "Earth Zoom AI前端 - 探索从微观到宇宙的视觉革命展示网站",
+  "name": "qwen-image-edit-frontend",
+  "version": "1.0.0",
+  "description": "Qwen Image Edit前端 - AI驱动的智能图像编辑平台展示网站",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^2.2.4",

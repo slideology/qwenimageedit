@@ -7,20 +7,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Earth Zoom AI 地球/太空主题配色方案  
-        'earth-blue': '#1e40af',      // 地球深蓝 - 海洋和大气层
-        'space-dark': '#0f172a',      // 太空深黑 - 宇宙背景
-        'cosmic-purple': '#7c3aed',   // 宇宙紫色 - 神秘太空
-        'solar-gold': '#f59e0b',      // 太阳金色 - 阳光和能量
-        'stellar-silver': '#e5e7eb',  // 星光银 - 金属光泽
-        'ocean-blue': '#0ea5e9',      // 海洋蓝 - 地球水域
-        'earth-green': '#059669',     // 地球绿 - 陆地植被
-        'atmosphere': '#3b82f6',      // 大气层蓝
-        'nebula': '#8b5cf6',          // 星云紫
-        'starlight': '#f8fafc',       // 星光白
-        'meteor': '#ef4444',          // 流星红
-        'satellite': '#6b7280',       // 卫星灰
-        'horizon': '#fbbf24',         // 地平线金
+        // Qwen Image Edit AI图像编辑主题配色方案  
+        'qwen-purple': '#7c3aed',     // 主色调 - AI智能紫
+        'qwen-blue': '#3b82f6',       // 辅助色 - 科技蓝
+        'qwen-cyan': '#06b6d4',       // 强调色 - 创新青
+        'qwen-dark': '#0f172a',       // 背景色 - 深色主题
+        'qwen-gray': '#1e293b',       // 卡片背景 - 深灰
+        'qwen-light': '#f8fafc',      // 文字白色
+        'qwen-orange': '#f97316',     // 按钮橙色 - CTA
+        'qwen-green': '#10b981',      // 成功绿色
+        'qwen-red': '#ef4444',        // 错误红色
+        'qwen-yellow': '#fbbf24',     // 警告黄色
+        
+        // 保留原有颜色以兼容现有组件
+        'earth-blue': '#1e40af',      
+        'space-dark': '#0f172a',      
+        'cosmic-purple': '#7c3aed',   
+        'solar-gold': '#f59e0b',      
+        'stellar-silver': '#e5e7eb',  
+        'ocean-blue': '#0ea5e9',      
+        'earth-green': '#059669',     
+        'atmosphere': '#3b82f6',      
+        'nebula': '#8b5cf6',          
+        'starlight': '#f8fafc',       
+        'meteor': '#ef4444',          
+        'satellite': '#6b7280',       
+        'horizon': '#fbbf24',
         
         // 嵌套定义保持兼容性
         earth: {
@@ -50,6 +62,13 @@ module.exports = {
         mono: ['"Fira Code"', 'monospace'],
       },
       backgroundImage: {
+        // Qwen Image Edit 渐变背景
+        'qwen-hero': 'linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #06b6d4 100%)',
+        'qwen-card': 'linear-gradient(135deg, #1e293b 0%, #374151 100%)',
+        'qwen-button': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
+        'qwen-dark': 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+        
+        // 保留原有背景图片
         'earth-hero': "url('/src/assets/earth-hero-bg.jpg')",
         'space-pattern': "url('/src/assets/space-pattern.jpg')",
         'stars-texture': "url('/src/assets/stars-texture.png')",

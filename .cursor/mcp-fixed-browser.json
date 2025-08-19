@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "browser": {
+      "command": "node",
+      "args": ["scripts/start-mcp-browser-fixed.js"],
+      "env": {
+        "NODE_ENV": "development",
+        "NODE_OPTIONS": "--experimental-modules --es-module-specifier-resolution=node"
+      }
+    },
+    "context7": {
+      "command": "node",
+      "args": ["scripts/start-mcp-context7.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  }
+}

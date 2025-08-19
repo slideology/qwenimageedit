@@ -7,7 +7,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <SEOHead 
-        title="Contact Us - ZOOM EARTH AI"
+        title="Contact Us - Qwen Image Edit"
         description="Have questions or suggestions? Feel free to contact us. Our team is here to help."
         type="website"
       />
@@ -29,8 +29,8 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-medium text-gray-300">Email</h3>
                     <p className="mt-2 text-gray-400">
-                      <a href="mailto:contact@earthzoomai.org" className="hover:text-white">
-                        contact@earthzoomai.org
+                      <a href="mailto:contact@qwenimageedit.com" className="hover:text-white">
+                        contact@qwenimageedit.com
                       </a>
                     </p>
                   </div>
@@ -39,18 +39,18 @@ const ContactPage: React.FC = () => {
                     <h3 className="text-lg font-medium text-gray-300">Social Media</h3>
                     <div className="mt-2 space-y-2 text-gray-400">
                       <p>
-                        <a href="https://twitter.com/ZoomEarthAI" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                          Twitter: @ZoomEarthAI
+                                <a href="https://twitter.com/QwenImageEdit" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+          Twitter: @QwenImageEdit
                         </a>
                       </p>
                       <p>
-                        <a href="https://discord.gg/zoomearthai" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                          Discord: ZOOM EARTH AI Community
+                                <a href="https://discord.gg/qwenimageedit" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+          Discord: Qwen Image Edit Community
                         </a>
                       </p>
                       <p>
-                        <a href="https://linkedin.com/company/zoomearthai" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                          LinkedIn: ZOOM EARTH AI
+                                <a href="https://linkedin.com/company/qwenimageedit" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+          LinkedIn: Qwen Image Edit
                         </a>
                       </p>
                     </div>

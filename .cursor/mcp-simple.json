@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "browser": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "context7": {
+      "command": "npx", 
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  }
+}

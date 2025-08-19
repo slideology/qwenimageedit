@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 /**
- * ZOOM EARTH AI 单页应用导航栏组件
+ * Qwen Image Edit 单页应用导航栏组件
  * 适配单页应用，包含锚点导航和固定导航栏效果
  * 支持AffiliateBanner的动态高度调整
  */
@@ -15,8 +15,9 @@ const Header = () => {
   
   // 导航链接数据 - 改为锚点导航
   const navLinks = [
-    { name: 'Features', path: '#features' },
     { name: 'Showcase', path: '#showcase' },
+    { name: 'Live Editor', path: '#live-editor' },
+    { name: 'Process', path: '#process' },
     { name: 'Reviews', path: '#reviews' },
     { name: 'FAQ', path: '#faq' },
   ];
@@ -33,7 +34,7 @@ const Header = () => {
       setIsScrolled(scrollTop > 50);
       
       // 检测当前激活的区块
-      const sections = ['showcase', 'features', 'reviews', 'faq'];
+      const sections = ['showcase', 'live-editor', 'process', 'reviews', 'faq'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -97,11 +98,11 @@ const Header = () => {
           {/* Logo区域 */}
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/favicon.ico"
-              alt="ZOOM EARTH AI Logo"
+              src="/favicon.png"
+              alt="Qwen Image Edit Logo"
               className="w-8 h-8 rounded-full"
             />
-            <span className="text-2xl font-bold text-white">ZOOM EARTH AI</span>
+            <span className="text-2xl font-bold text-white">Qwen Image Edit</span>
           </Link>
           
           {/* 桌面端导航菜单 */}

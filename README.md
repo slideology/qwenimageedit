@@ -1,12 +1,12 @@
-# 🌍 Earth Zoom AI - 探索从微观到宇宙的视觉革命
+# 🖼️ Qwen Image Edit - AI驱动的智能图像编辑平台
 
 ## 📋 项目概述
 
-Earth Zoom AI 是一个专业的AI视觉技术展示网站，专注于介绍和推广革命性的Earth Zoom（地球缩放）AI技术。该技术能够从任意图像开始，通过AI算法生成令人震撼的缩放序列，最终展现地球在宇宙中的壮观视角。我们的网站致力于教育用户了解这项技术的原理、应用和潜力。
+Qwen Image Edit 是一个专业的AI图像编辑技术展示网站，专注于介绍和推广革命性的Qwen Image Edit AI技术。该技术能够进行语义和外观编辑，包括文本编辑、对象移除、视角变换、风格转换等多种AI驱动的图像处理功能。我们的网站致力于展示这项技术的强大能力和实际应用价值。
 
-**当前版本**: v2.0.0 - Earth Zoom AI概念展示和教育平台
+**当前版本**: v1.0.0 - Qwen Image Edit AI图像编辑平台
 
-**官网**: [earthzoomai.org](https://earthzoomai.org)
+**在线编辑器**: 集成Hugging Face Gradio界面，提供实时AI图像编辑功能
 
 ## 🎯 网站定位
 

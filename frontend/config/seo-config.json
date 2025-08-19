@@ -1,0 +1,176 @@
+{
+  "defaultMeta": {
+    "title": "ZOOM EARTH AI - Intelligent Earth Zoom and Video Generation Tool",
+    "description": "Explore every corner of Earth with ZOOM EARTH AI. Our AI-driven technology enables you to create stunning earth zoom videos for education, presentations, and creative projects.",
+    "keywords": "earth zoom, ai video, cinematic, satellite, creative, education, viral content, zoom out, space view, aerial photography, geographic visualization",
+    "author": "ZOOM EARTH AI Team",
+    "robots": "index, follow",
+    "language": "en",
+    "image": "/images/og/default-og-image.webp",
+    "imageAlt": "ZOOM EARTH AI - Create stunning Earth zoom videos with AI"
+  },
+  "titleTemplates": {
+    "home": "{siteName} - {tagline}",
+    "page": "{pageTitle} | {siteName}",
+    "blog": "{postTitle} | {siteName} Blog",
+    "category": "{categoryName} | {siteName}",
+    "tag": "{tagName} | {siteName}"
+  },
+  "descriptionTemplates": {
+    "home": "{siteDescription}",
+    "page": "{pageDescription}",
+    "blog": "{postExcerpt}",
+    "category": "Explore {categoryName} content on {siteName}. {categoryDescription}",
+    "tag": "Browse all content tagged with {tagName} on {siteName}."
+  },
+  "pages": {
+    "home": {
+      "title": "ZOOM EARTH AI - Create Stunning Earth Zoom Videos with AI",
+      "description": "Transform your photos into cinematic zoom-out sequences from Earth to space. AI-powered video generation in 60 seconds. 4K quality, no watermark, commercial license included.",
+      "keywords": "earth zoom ai, cinematic zoom, satellite view, ai video generator, space zoom, aerial transition, geographic visualization, viral content creation",
+      "canonicalUrl": "/",
+      "ogImage": "/images/og/home-og-image.webp"
+    },
+    "features": {
+      "title": "Features - Advanced Earth Zoom Technology | ZOOM EARTH AI",
+      "description": "Discover powerful features of ZOOM EARTH AI: landmark transitions, creative effects, 4K output, batch processing, and professional-grade zoom capabilities.",
+      "keywords": "earth zoom features, ai video features, cinematic transitions, 4k video output, batch processing, professional video tools",
+      "canonicalUrl": "/features",
+      "ogImage": "/images/og/features-og-image.webp"
+    },
+    "showcase": {
+      "title": "Showcase - See Earth Zoom AI in Action | Examples & Demos",
+      "description": "Explore stunning examples of Earth zoom videos created with AI. See urban landscapes, natural wonders, and architectural marvels from space perspective.",
+      "keywords": "earth zoom examples, ai video showcase, cinematic demos, satellite view examples, zoom out videos, space perspective",
+      "canonicalUrl": "/showcase",
+      "ogImage": "/images/og/showcase-og-image.webp"
+    },
+    "about": {
+      "title": "About ZOOM EARTH AI - Revolutionary Video Creation Technology",
+      "description": "Learn about ZOOM EARTH AI's mission to democratize cinematic video creation. Discover our AI technology that transforms photos into stunning Earth zoom sequences.",
+      "keywords": "about zoom earth ai, ai video technology, cinematic creation, earth visualization, satellite imagery, video innovation",
+      "canonicalUrl": "/about",
+      "ogImage": "/images/og/about-og-image.webp"
+    },
+    "pricing": {
+      "title": "Pricing - Affordable Earth Zoom Video Creation | ZOOM EARTH AI",
+      "description": "Choose the perfect plan for your Earth zoom video needs. Free tier available, professional plans starting at $9/month. Commercial license included.",
+      "keywords": "earth zoom pricing, ai video pricing, video creation cost, cinematic video plans, commercial license",
+      "canonicalUrl": "/pricing",
+      "ogImage": "/images/og/pricing-og-image.webp"
+    }
+  },
+  "structuredData": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZOOM EARTH AI",
+      "url": "https://earthzoomai.org",
+      "logo": "https://earthzoomai.org/images/logo.png",
+      "description": "AI-powered Earth zoom video creation platform",
+      "sameAs": [
+        "https://twitter.com/zoomearthai",
+        "https://youtube.com/@zoomearthai",
+        "https://tiktok.com/@zoomearthai"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-0123",
+        "contactType": "customer service",
+        "email": "contact@earthzoomai.org"
+      }
+    },
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ZOOM EARTH AI",
+      "url": "https://earthzoomai.org",
+      "description": "Create stunning Earth zoom videos with AI technology",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://earthzoomai.org/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ZOOM EARTH AI",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web Browser",
+      "description": "AI-powered tool for creating cinematic Earth zoom videos",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free tier available with premium options"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1247",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    "faqPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": []
+    }
+  },
+  "openGraph": {
+    "type": "website",
+    "siteName": "ZOOM EARTH AI",
+    "locale": "en_US",
+    "imageWidth": 1200,
+    "imageHeight": 630,
+    "imageType": "image/webp"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@zoomearthai",
+    "creator": "@zoomearthai"
+  },
+  "keywords": {
+    "primary": [
+      "earth zoom ai",
+      "cinematic zoom",
+      "ai video generator",
+      "satellite view",
+      "space zoom",
+      "aerial transition"
+    ],
+    "secondary": [
+      "zoom out video",
+      "earth from space",
+      "geographic visualization",
+      "viral content creation",
+      "cinematic effects",
+      "video editing ai"
+    ],
+    "longTail": [
+      "how to create earth zoom videos",
+      "ai powered cinematic zoom effects",
+      "satellite view video generator",
+      "earth to space transition videos",
+      "professional zoom out effects",
+      "viral earth zoom content creation"
+    ],
+    "semantic": [
+      "aerial photography",
+      "satellite imagery",
+      "geographic mapping",
+      "space perspective",
+      "orbital view",
+      "atmospheric transition"
+    ]
+  },
+  "hreflang": {
+    "en": "https://earthzoomai.org",
+    "es": "https://earthzoomai.org/es",
+    "fr": "https://earthzoomai.org/fr",
+    "de": "https://earthzoomai.org/de",
+    "zh": "https://earthzoomai.org/zh"
+  }
+}

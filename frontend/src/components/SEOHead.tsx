@@ -10,16 +10,16 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'ZOOM EARTH AI - Intelligent Earth Zoom and Video Generation Tool',
-  description = 'Explore every corner of Earth with ZOOM EARTH AI. Our AI-driven technology enables you to create stunning earth zoom videos for education, presentations, and creative projects.',
+  title = 'Qwen Image Edit - Advanced AI Image Editing Platform',
+  description = 'Transform your images with Qwen Image Edit. Our AI-driven technology enables semantic and appearance editing, text modification, style transfer, and professional image enhancement.',
   image = 'https://earthzoomai.org/images/earth-zoom/social/og-image.jpg',
   url = typeof window !== 'undefined' ? window.location.href : 'https://earthzoomai.org',
   type = 'website',
   structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    'name': 'ZOOM EARTH AI',
-    'description': 'Intelligent Earth Zoom and Video Generation Tool',
+    'name': 'Qwen Image Edit',
+    'description': 'Advanced AI Image Editing Platform',
     'applicationCategory': 'MultimediaApplication',
     'operatingSystem': 'Web',
     'offers': {
@@ -29,7 +29,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     },
     'author': {
       '@type': 'Organization',
-      'name': 'ZOOM EARTH AI Team',
+      'name': 'Qwen Image Edit Team',
       'url': 'https://earthzoomai.org'
     }
   }
@@ -57,9 +57,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMetaTag('theme-color', '#0f172a');
     setMetaTag('robots', 'index, follow');
     setMetaTag('googlebot', 'index, follow');
-    setMetaTag('keywords', 'ZOOM EARTH AI, earth zoom, AI video generation, geographic visualization, satellite imagery, earth observation');
-    setMetaTag('author', 'ZOOM EARTH AI Team');
-    setMetaTag('copyright', 'ZOOM EARTH AI');
+    setMetaTag('keywords', 'Qwen Image Edit, AI image editing, semantic editing, appearance editing, text editing, style transfer, image enhancement');
+    setMetaTag('author', 'Qwen Image Edit Team');
+    setMetaTag('copyright', 'Qwen Image Edit');
 
     // Set Open Graph tags
     setMetaTag('og:title', title, true);
@@ -67,11 +67,11 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMetaTag('og:image', image, true);
     setMetaTag('og:url', url, true);
     setMetaTag('og:type', type, true);
-    setMetaTag('og:site_name', 'ZOOM EARTH AI', true);
+    setMetaTag('og:site_name', 'Qwen Image Edit', true);
 
     // Set Twitter Card tags
     setMetaTag('twitter:card', 'summary_large_image');
-    setMetaTag('twitter:site', '@ZoomEarthAI');
+    setMetaTag('twitter:site', '@QwenImageEdit');
     setMetaTag('twitter:title', title);
     setMetaTag('twitter:description', description);
     setMetaTag('twitter:image', image);

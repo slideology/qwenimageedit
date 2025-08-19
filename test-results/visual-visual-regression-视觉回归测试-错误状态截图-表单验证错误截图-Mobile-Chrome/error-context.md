@@ -1,0 +1,154 @@
+# Page snapshot
+
+```yaml
+- img
+- paragraph: Free to Generate AI Video Online Now
+- link "Try it Free":
+  - /url: https://pollo.ai?ref=ytayndd
+- button "Close banner":
+  - img
+- banner:
+  - link "ZOOM EARTH AI Logo ZOOM EARTH AI":
+    - /url: /
+    - img "ZOOM EARTH AI Logo"
+    - text: ZOOM EARTH AI
+  - button:
+    - img
+- main:
+  - heading "ZOOM EARTH AI" [level=1]
+  - paragraph: Transform your photos into stunning cinematic zoom-out sequences from Earth to space. Create viral-worthy content in seconds.
+  - link "Start Creating Now":
+    - /url: https://pollo.ai?ref=ytayndd
+  - link "View Examples":
+    - /url: https://pollo.ai?ref=ytayndd
+  - text: ⚡60-Second Processing 🤖AI-Powered 📱Multi-Platform 🎯Viral Ready
+  - heading "See It In Action" [level=2]
+  - paragraph: Check out these amazing transformations created with our AI
+  - img "Landmark Transition - From street view to satellite perspective"
+  - heading "Landmark Transition" [level=3]
+  - paragraph: From street view to satellite perspective
+  - img "Creative Effects - Artistic zoom sequences with style"
+  - heading "Creative Effects" [level=3]
+  - paragraph: Artistic zoom sequences with style
+  - img "Advanced Features - Professional-grade zoom capabilities"
+  - heading "Advanced Features" [level=3]
+  - paragraph: Professional-grade zoom capabilities
+  - heading "Transform Your Content with Zoom Earth AI" [level=2]
+  - paragraph: Experience the next generation of Earth zoom-out effects with our comprehensive suite of professional features. From advanced AI processing to seamless satellite integration, Zoom Earth AI provides everything you need to create stunning visual content.
+  - text: 🤖
+  - heading "AI-Powered Processing" [level=3]
+  - paragraph: Zoom Earth AI leverages cutting-edge artificial intelligence to analyze and process your images. Our advanced neural networks understand depth, perspective, and spatial relationships to create seamless transitions from ground to space. Experience the power of machine learning in every zoom sequence.
+  - text: ⚡
+  - heading "Real-Time Rendering" [level=3]
+  - paragraph: Watch your Earth zoom-out effects come to life in real-time. Our optimized processing pipeline delivers results in under 60 seconds, without compromising on quality. Perfect for content creators who need quick turnaround times while maintaining professional standards.
+  - text: 🛰️
+  - heading "Advanced Satellite Integration" [level=3]
+  - paragraph: Seamlessly blend your ground-level photos with actual satellite imagery using our proprietary technology. Zoom Earth AI matches terrain, lighting, and atmospheric conditions to create ultra-realistic transitions that captivate viewers and maintain perfect continuity.
+  - text: 🎨
+  - heading "Customizable Effects" [level=3]
+  - paragraph: Take control of your creative vision with extensive customization options. Adjust zoom speed, transition styles, atmospheric effects, time-of-day lighting, cloud coverage, and camera movements. Create unique and engaging content that stands out on any platform.
+  - text: 📱
+  - heading "Multi-Platform Export" [level=3]
+  - paragraph: Share your content everywhere with our optimized export presets. Whether it's vertical videos for TikTok and Instagram Reels, landscape format for YouTube, or custom aspect ratios for specific needs, Zoom Earth AI ensures your content looks perfect on every platform.
+  - text: 🔒
+  - heading "Enterprise-Grade Security" [level=3]
+  - paragraph: Trust in our robust security infrastructure to protect your content. With end-to-end encryption, secure cloud processing, and automatic data cleanup, your creative assets are always safe. We maintain strict compliance with global privacy regulations and industry standards.
+  - heading "What Our Users Say" [level=2]
+  - paragraph: Join thousands of creators who have transformed their content
+  - text: SC
+  - heading "Sarah Chen" [level=3]
+  - paragraph: Social Media Creator
+  - paragraph: "\"The Earth zoom out effect transformed my content! My TikTok views increased by 300% after using this AI tool. Absolutely phenomenal results.\""
+  - text: MR
+  - heading "Michael Rodriguez" [level=3]
+  - paragraph: Professional Photographer
+  - paragraph: "\"As a professional photographer, I'm amazed by the quality. The 4K output is crystal clear and the depth mapping is incredibly accurate.\""
+  - text: ET
+  - heading "Emma Thompson" [level=3]
+  - paragraph: Marketing Expert
+  - paragraph: "\"This tool has become essential for our marketing campaigns. The quick processing time and professional results are exactly what we needed.\""
+  - text: DK
+  - heading "David Kim" [level=3]
+  - paragraph: Video Producer
+  - paragraph: "\"The cinematic quality of the zoom transitions is mind-blowing. It's like having a professional VFX team at your fingertips.\""
+  - text: LW
+  - heading "Lisa Wang" [level=3]
+  - paragraph: Content Creator
+  - paragraph: "\"Our engagement rates skyrocketed after incorporating these effects. The ease of use and quick rendering make it perfect for daily content.\""
+  - text: JA
+  - heading "James Anderson" [level=3]
+  - paragraph: YouTuber
+  - paragraph: "\"Finally, a tool that delivers professional results without the complexity. The AI understanding of depth and perspective is remarkable.\""
+  - heading "Everything About Zoom Earth AI" [level=2]
+  - paragraph: Detailed answers to your questions about our Earth zoom-out effect generator
+  - button "How does ZOOM EARTH AI create the zoom-out effect? +":
+    - heading "How does ZOOM EARTH AI create the zoom-out effect? +" [level=3]
+  - button "What types of images work best with ZOOM EARTH AI? +":
+    - heading "What types of images work best with ZOOM EARTH AI? +" [level=3]
+  - button "What makes ZOOM EARTH AI different from other video effects tools? +":
+    - heading "What makes ZOOM EARTH AI different from other video effects tools? +" [level=3]
+  - button "How can I optimize my content for different platforms? +":
+    - heading "How can I optimize my content for different platforms? +" [level=3]
+  - button "How does ZOOM EARTH AI handle data privacy and security? +":
+    - heading "How does ZOOM EARTH AI handle data privacy and security? +" [level=3]
+  - button "What support resources does ZOOM EARTH AI provide? +":
+    - heading "What support resources does ZOOM EARTH AI provide? +" [level=3]
+  - heading "Subscribe to Our Updates" [level=2]
+  - paragraph: Get the latest features, tutorials, and tips from ZOOM EARTH AI.
+  - textbox "Enter your email address": invalid-email
+  - button "Subscribe"
+  - paragraph:
+    - text: We respect your privacy. You can unsubscribe at any time. View our
+    - link "Privacy Policy":
+      - /url: /privacy-policy
+    - text: .
+- contentinfo:
+  - heading "ZOOM EARTH AI" [level=3]
+  - paragraph: Transform your content with stunning Earth zoom effects. Create professional-quality videos in minutes.
+  - heading "Quick Links" [level=3]
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+    - listitem:
+      - link "Features":
+        - /url: "#features"
+    - listitem:
+      - link "Showcase":
+        - /url: "#showcase"
+    - listitem:
+      - link "Reviews":
+        - /url: "#reviews"
+    - listitem:
+      - link "FAQ":
+        - /url: "#faq"
+    - listitem:
+      - link "About":
+        - /url: /about
+  - heading "Support" [level=3]
+  - list:
+    - listitem:
+      - link "Contact Us":
+        - /url: /contact
+    - listitem:
+      - link "Pricing":
+        - /url: /pricing
+    - listitem:
+      - link "Privacy Policy":
+        - /url: /privacy-policy
+    - listitem:
+      - link "Terms of Service":
+        - /url: /terms-of-service
+  - heading "Follow Us" [level=3]
+  - link:
+    - /url: https://youtube.com/@zoomearthai
+    - img
+  - link:
+    - /url: https://twitter.com/zoomearthai
+    - img
+  - link:
+    - /url: https://tiktok.com/@zoomearthai
+    - img
+  - paragraph: Join our community and stay updated with the latest AI video innovations!
+  - paragraph: © 2025 ZOOM EARTH AI. All rights reserved.
+```

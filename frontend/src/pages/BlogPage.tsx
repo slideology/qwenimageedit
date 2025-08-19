@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const BlogPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'ZOOM EARTH AI Blog - AI Video Technology Insights';
+    document.title = 'Qwen Image Edit Blog - AI Image Editing Technology Insights';
   }, []);
 
   const blogPosts = [
     {
       id: 'ai-video-revolution',
       title: 'The AI Video Generation Revolution',
-      excerpt: 'Discover how AI is transforming video creation with ZOOM EARTH AI technology.',
+      excerpt: 'Discover how AI is transforming image editing with Qwen Image Edit technology.',
       date: '2024-01-15',
       category: 'Technology',
       image: '/images/earth-zoom/blog/ai-revolution.jpg'
@@ -18,7 +18,7 @@ const BlogPage: React.FC = () => {
     {
       id: 'education-case-study',
       title: 'Transforming Education with AI Videos',
-      excerpt: 'How universities use ZOOM EARTH AI to improve student engagement.',
+      excerpt: 'How universities use Qwen Image Edit to improve student engagement.',
       date: '2024-01-12',
       category: 'Education',
       image: '/images/earth-zoom/blog/education.jpg'
@@ -30,9 +30,9 @@ const BlogPage: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-white mb-6">ZOOM EARTH AI Blog</h1>
+          <h1 className="text-5xl font-bold text-white mb-6">Qwen Image Edit Blog</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Insights, tutorials, and case studies about AI-powered video generation technology
+                          Insights, tutorials, and case studies about AI-powered image editing technology
           </p>
         </div>
 
@@ -84,7 +84,7 @@ const BlogPage: React.FC = () => {
             to="/"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
           >
-            Explore ZOOM EARTH AI
+                            Explore Qwen Image Edit
           </Link>
         </div>
       </div>

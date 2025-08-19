@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NewsletterSubscribe from '../components/NewsletterSubscribe';
+import LiveEditor from '../components/LiveEditor';
+import ShowcaseGrid from '../components/ShowcaseGrid';
+import ProcessFlow from '../components/ProcessFlow';
 
 /**
- * ZOOM EARTH AI Single Page Application Homepage
+ * Qwen Image Edit Single Page Application Homepage
  * Integrates all features: Hero, Features, Showcase, Reviews, FAQ
- * Reference structure from https://zoomearthai.com/
+ * Reference structure from https://qwenimageedit.app/
  */
 const HomePage = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -53,26 +56,26 @@ const HomePage = () => {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How does ZOOM EARTH AI create the zoom-out effect?",
+          "name": "How does Qwen Image Edit perform semantic editing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ZOOM EARTH AI uses advanced artificial intelligence to analyze your image and create seamless zoom-out sequences. Our 4-layer AI architecture analyzes depth, plans optimal paths, generates intermediate frames, and synthesizes professional-quality videos automatically."
+            "text": "Qwen Image Edit uses advanced artificial intelligence to understand image semantics and perform precise edits. Our AI model analyzes context, preserves character consistency, and enables text editing, object manipulation, and style transfer with professional-quality results."
           }
         },
         {
           "@type": "Question",
-          "name": "What types of images work best with ZOOM EARTH AI?",
+          "name": "What types of images work best with Qwen Image Edit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For optimal results, use high-resolution images (1920x1080 or higher) with clear subjects and good composition. Images with distinct focal points, rich details, and contrasting elements work best. We support JPG, PNG, WebP formats up to 50MB."
+            "text": "For optimal results, use high-resolution images with clear subjects and good composition. Images with distinct elements, readable text, and well-defined objects work best for semantic and appearance editing. We support JPG, PNG, WebP formats up to 50MB."
           }
         },
         {
           "@type": "Question",
-          "name": "What makes ZOOM EARTH AI different from other video effects tools?",
+          "name": "What makes Qwen Image Edit different from other image editing tools?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Unlike traditional video effects, ZOOM EARTH AI uses proprietary AI algorithms to create infinite zoom capabilities with unprecedented visual continuity. Our technology automatically handles complex depth analysis and content generation for professional results."
+            "text": "Unlike traditional image editors, Qwen Image Edit uses advanced AI to understand image semantics and perform intelligent edits. Our technology automatically handles character consistency, precise text editing, and style transfer while maintaining visual coherence."
           }
         },
         {
@@ -80,12 +83,12 @@ const HomePage = () => {
           "name": "How can I optimize my content for different platforms?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ZOOM EARTH AI offers optimized export presets for all major platforms: vertical videos for TikTok and Instagram Reels, landscape format for YouTube, and custom aspect ratios. All outputs maintain perfect quality across platforms."
+            "text": "Qwen Image Edit offers optimized export options for all major platforms: high-resolution outputs for print, web-optimized formats for digital use, and custom dimensions. All outputs maintain perfect quality and original image characteristics."
           }
         },
         {
           "@type": "Question",
-          "name": "How does ZOOM EARTH AI handle data privacy and security?",
+          "name": "How does Qwen Image Edit handle data privacy and security?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We maintain enterprise-grade security with SOC 2 Type II compliance. All uploads are encrypted with AES-256, processed in secure environments, and automatically deleted after 30 days. We're GDPR compliant with EU data residency options."
@@ -93,7 +96,7 @@ const HomePage = () => {
         },
         {
           "@type": "Question",
-          "name": "What support resources does ZOOM EARTH AI provide?",
+          "name": "What support resources does Qwen Image Edit provide?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We offer comprehensive support including 24/7 live chat, video tutorials, technical documentation, community forum, and webinar training sessions. Professional plans include dedicated support with 4-hour response time."
@@ -148,42 +151,69 @@ const HomePage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-5xl mx-auto">
             {/* 主标题 */}
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent leading-tight animate-fade-in">
-              ZOOM EARTH AI
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent leading-tight animate-fade-in">
+              Qwen Image Edit
             </h1>
               
             {/* 副标题 */}
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{animationDelay: '0.3s'}}>
-              Transform your photos into stunning cinematic zoom-out sequences from Earth to space. Create viral-worthy content in seconds.
+              Edit your images like never before with Qwen Image Edit. Leverage AI for seamless text editing, visual transformations, and artistic style enhancements.
               </p>
               
             {/* 行动按钮 */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in" style={{animationDelay: '0.6s'}}>
-              <a href="https://pollo.ai?ref=ytayndd" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-xl font-semibold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
-                Start Creating Now
+              <a href="#live-editor" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-semibold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/25">
+                Start Editing
               </a>
-              <a href="https://pollo.ai?ref=ytayndd" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-gray-400 text-gray-300 hover:bg-gray-800 hover:border-gray-300 px-10 py-5 rounded-xl font-semibold text-xl transition-all duration-300">
-                View Examples
+              <a href="#showcase" className="bg-transparent border-2 border-gray-400 text-gray-300 hover:bg-gray-800 hover:border-gray-300 px-10 py-5 rounded-xl font-semibold text-xl transition-all duration-300">
+                View Features
               </a>
             </div>
             
             {/* 特色标签 */}
             <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{animationDelay: '0.9s'}}>
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full px-6 py-3 text-gray-300 hover:bg-gray-700/50 transition-all duration-300">
-                <span className="text-blue-400 mr-2">⚡</span>
-                60-Second Processing
+                <span className="text-purple-400 mr-2">🎨</span>
+                Semantic Editing
               </div>
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full px-6 py-3 text-gray-300 hover:bg-gray-700/50 transition-all duration-300">
-                <span className="text-purple-400 mr-2">🤖</span>
-                AI-Powered
+                <span className="text-blue-400 mr-2">✏️</span>
+                Text Editing
               </div>
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full px-6 py-3 text-gray-300 hover:bg-gray-700/50 transition-all duration-300">
-                <span className="text-green-400 mr-2">📱</span>
-                Multi-Platform
+                <span className="text-cyan-400 mr-2">🔄</span>
+                View Synthesis
               </div>
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full px-6 py-3 text-gray-300 hover:bg-gray-700/50 transition-all duration-300">
-                <span className="text-yellow-400 mr-2">🎯</span>
-                Viral Ready
+                <span className="text-green-400 mr-2">🎭</span>
+                Style Transfer
+              </div>
+            </div>
+
+            {/* 用户统计和头像展示 */}
+            <div className="mt-16 animate-fade-in" style={{animationDelay: '1.2s'}}>
+              <div className="flex flex-col items-center">
+                {/* 用户头像组 */}
+                <div className="flex -space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full border-2 border-gray-800 flex items-center justify-center text-white font-bold">
+                    A
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full border-2 border-gray-800 flex items-center justify-center text-white font-bold">
+                    M
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full border-2 border-gray-800 flex items-center justify-center text-white font-bold">
+                    S
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full border-2 border-gray-800 flex items-center justify-center text-white font-bold">
+                    L
+                  </div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full border-2 border-gray-800 flex items-center justify-center text-white font-bold">
+                    +
+                  </div>
+                </div>
+                <p className="text-gray-400 text-lg">
+                  Trusted by over <span className="text-white font-semibold">100K creators</span> and professionals worldwide
+                </p>
               </div>
             </div>
           </div>
@@ -213,51 +243,54 @@ const HomePage = () => {
             <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 animate-on-scroll">
               <div className="aspect-video rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="/images/showcase/landmark-transition.webp" 
-                  alt="Landmark Transition - From street view to satellite perspective"
+                  src="/images/showcase/showcase-001.webp" 
+                  alt="Character Consistency - Dynamic editing while preserving IP identity"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Landmark Transition</h3>
-              <p className="text-gray-400">From street view to satellite perspective</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">Character Consistency</h3>
+              <p className="text-gray-400">Dynamic editing while preserving IP identity</p>
             </div>
             
             <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 animate-on-scroll" style={{animationDelay: '0.2s'}}>
               <div className="aspect-video rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="/images/showcase/creative-effects.webp" 
-                  alt="Creative Effects - Artistic zoom sequences with style"
+                  src="/images/showcase/showcase-002.webp" 
+                  alt="Novel View Generation - Seamless perspective transformations"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Creative Effects</h3>
-              <p className="text-gray-400">Artistic zoom sequences with style</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">Novel View Generation</h3>
+              <p className="text-gray-400">Seamless perspective transformations</p>
             </div>
             
             <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 animate-on-scroll" style={{animationDelay: '0.4s'}}>
               <div className="aspect-video rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="/images/showcase/advanced-features.webp" 
-                  alt="Advanced Features - Professional-grade zoom capabilities"
+                  src="/images/showcase/showcase-003.webp" 
+                  alt="Precision Removal - Intelligent object removal"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Advanced Features</h3>
-              <p className="text-gray-400">Professional-grade zoom capabilities</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">Precision Removal</h3>
+              <p className="text-gray-400">Intelligent object removal</p>
             </div>
           </div>
-        </div>
+                </div>
       </section>
-
+      
+      {/* Showcase Section - 9大功能展示 */}
+      <ShowcaseGrid />
+      
       {/* Features Section */}
       <section id="features" className="relative py-24 bg-gray-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 animate-on-scroll">
             <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
-              Transform Your Content with Zoom Earth AI
+              Transform Your Images with Qwen Image Edit
             </h2>
             <p className="text-xl md:text-2xl text-gray-300 max-w-5xl mx-auto leading-relaxed">
-              Experience the next generation of Earth zoom-out effects with our comprehensive suite of professional features. From advanced AI processing to seamless satellite integration, Zoom Earth AI provides everything you need to create stunning visual content.
+              Experience the next generation of AI image editing with our comprehensive suite of professional features. From advanced semantic understanding to precise appearance editing, Qwen Image Edit provides everything you need to create stunning visual content.
             </p>
           </div>
           
@@ -269,7 +302,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-400 transition-colors">AI-Powered Processing</h3>
               <p className="text-gray-400 leading-relaxed">
-                Zoom Earth AI leverages cutting-edge artificial intelligence to analyze and process your images. Our advanced neural networks understand depth, perspective, and spatial relationships to create seamless transitions from ground to space. Experience the power of machine learning in every zoom sequence.
+                Qwen Image Edit leverages cutting-edge artificial intelligence to understand and edit your images semantically. Our advanced neural networks comprehend context, characters, and visual elements to perform precise edits while maintaining consistency. Experience the power of machine learning in every edit.
               </p>
             </div>
             
@@ -280,7 +313,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-yellow-400 transition-colors">Real-Time Rendering</h3>
               <p className="text-gray-400 leading-relaxed">
-                Watch your Earth zoom-out effects come to life in real-time. Our optimized processing pipeline delivers results in under 60 seconds, without compromising on quality. Perfect for content creators who need quick turnaround times while maintaining professional standards.
+                Watch your image edits come to life in real-time. Our optimized processing pipeline delivers results in under 60 seconds, without compromising on quality. Perfect for content creators who need quick turnaround times while maintaining professional standards.
               </p>
             </div>
             
@@ -289,9 +322,9 @@ const HomePage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <div className="text-3xl">🛰️</div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-green-400 transition-colors">Advanced Satellite Integration</h3>
+                              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-green-400 transition-colors">Advanced Semantic Understanding</h3>
               <p className="text-gray-400 leading-relaxed">
-                Seamlessly blend your ground-level photos with actual satellite imagery using our proprietary technology. Zoom Earth AI matches terrain, lighting, and atmospheric conditions to create ultra-realistic transitions that captivate viewers and maintain perfect continuity.
+                Seamlessly integrate new elements into your images using our proprietary technology. Qwen Image Edit understands context, lighting, and visual coherence to create ultra-realistic edits that maintain perfect consistency across all modifications.
               </p>
             </div>
             
@@ -313,7 +346,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-indigo-400 transition-colors">Multi-Platform Export</h3>
               <p className="text-gray-400 leading-relaxed">
-                Share your content everywhere with our optimized export presets. Whether it's vertical videos for TikTok and Instagram Reels, landscape format for YouTube, or custom aspect ratios for specific needs, Zoom Earth AI ensures your content looks perfect on every platform.
+                Share your edited images everywhere with our optimized export options. Whether it's high-resolution prints, web-optimized formats, or custom dimensions for specific platforms, Qwen Image Edit ensures your images look perfect in every context.
               </p>
             </div>
             
@@ -443,43 +476,64 @@ const HomePage = () => {
         </div>
       </section>
       
+      {/* Live Editor Section - Qwen Image Edit 在线编辑器 */}
+      <LiveEditor />
+      
+      {/* Process Flow Section - 4步操作流程 */}
+      <ProcessFlow />
+      
       {/* FAQ Section */}
       <section id="faq" className="py-20 relative bg-gray-900/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Everything About Zoom Earth AI
+              Qwen Image Edit
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+                Frequently Asked Questions
+              </span>
             </h2>
             <p className="text-xl text-gray-400">
-              Detailed answers to your questions about our Earth zoom-out effect generator
+              Everything You Need to Know About Qwen Image Edit's Advanced Semantic & Appearance Image Editing
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
             {[
               {
-                question: "How does ZOOM EARTH AI create the zoom-out effect?",
-                answer: "ZOOM EARTH AI uses advanced artificial intelligence to analyze your image and create seamless zoom-out sequences. Our 4-layer AI architecture analyzes depth, plans optimal paths, generates intermediate frames, and synthesizes professional-quality videos automatically."
+                question: "What is Qwen Image Edit?",
+                answer: "Qwen Image Edit is an advanced AI-powered image editing tool built on the 20B Qwen-Image model. It enables both semantic and appearance editing capabilities, including text editing, style transfer, and object manipulation."
               },
               {
-                question: "What types of images work best with ZOOM EARTH AI?",
-                answer: "For optimal results, use high-resolution images (1920x1080 or higher) with clear subjects and good composition. Images with distinct focal points, rich details, and contrasting elements work best. We support JPG, PNG, WebP formats up to 50MB."
+                question: "What types of image editing can Qwen Image Edit perform?",
+                answer: "The system supports semantic editing (IP creation, object rotation, style transfer), appearance editing (adding/removing elements while preserving other regions), precise text editing in both English and Chinese, and novel view synthesis up to 180 degrees."
               },
               {
-                question: "What makes ZOOM EARTH AI different from other video effects tools?",
-                answer: "Unlike traditional video effects, ZOOM EARTH AI uses proprietary AI algorithms to create infinite zoom capabilities with unprecedented visual continuity. Our technology automatically handles complex depth analysis and content generation for professional results."
+                question: "How does Qwen Image Edit maintain character consistency during edits?",
+                answer: "The system utilizes advanced semantic understanding to preserve visual semantics and character consistency, even when most pixels differ from the original image. This enables the effortless creation of IP content variations."
               },
               {
-                question: "How can I optimize my content for different platforms?",
-                answer: "ZOOM EARTH AI offers optimized export presets for all major platforms: vertical videos for TikTok and Instagram Reels, landscape format for YouTube, and custom aspect ratios. All outputs maintain perfect quality across platforms."
+                question: "Can Qwen Image Edit handle both English and Chinese text editing?",
+                answer: "Yes, Qwen Image Edit supports bilingual text editing, allowing precise addition, deletion, and modification of text in both languages while maintaining original font characteristics and styling."
               },
               {
-                question: "How does ZOOM EARTH AI handle data privacy and security?",
-                answer: "We maintain enterprise-grade security with SOC 2 Type II compliance. All uploads are encrypted with AES-256, processed in secure environments, and automatically deleted after 30 days. We're GDPR compliant with EU data residency options."
+                question: "What is chained editing, and how does it work?",
+                answer: "Chained editing is a step-by-step approach that allows for the progressive correction and refinement of complex images. It enables users to make targeted modifications and achieve precise results through iterative editing processes."
               },
               {
-                question: "What support resources does ZOOM EARTH AI provide?",
-                answer: "We offer comprehensive support including 24/7 live chat, video tutorials, technical documentation, community forum, and webinar training sessions. Professional plans include dedicated support with 4-hour response time."
+                question: "How does the appearance editing feature work?",
+                answer: "Appearance editing allows users to add, remove, or modify specific elements while keeping other regions of the image unchanged. This ensures environmental consistency and attention to detail."
+              },
+              {
+                question: "What view synthesis capabilities does Qwen Image Edit offer?",
+                answer: "The system can rotate objects up to 180 degrees, allowing users to view different perspectives and the back sides of objects, while maintaining structural consistency throughout the transformation."
+              },
+              {
+                question: "Can Qwen Image Edit perform artistic style transfers?",
+                answer: "Yes, Qwen Image Edit can transform images into various artistic styles, including Studio Ghibli and other aesthetic approaches, while preserving essential features and maintaining visual integrity."
+              },
+              {
+                question: "How does Qwen Image Edit compare to other image editing tools?",
+                answer: "Qwen Image Edit achieves state-of-the-art performance across multiple public benchmarks, combining advanced semantic understanding with precise appearance control to deliver professional-grade results."
               }
             ].map((faq, index) => (
               <div key={index} className="mb-4 bg-gray-800 rounded-xl animate-on-scroll" style={{animationDelay: `${index * 0.1}s`}}>

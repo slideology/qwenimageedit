@@ -1,0 +1,189 @@
+{
+  "hero": {
+    "title": "ZOOM EARTH AI",
+    "subtitle": "Transform your photos into stunning cinematic zoom-out sequences from Earth to space. Create viral-worthy content in seconds.",
+    "description": "Experience the power of AI-driven Earth zoom technology. Upload your photo and watch as we create breathtaking zoom-out sequences that take viewers from street level to the vastness of space.",
+    "primaryCta": {
+      "text": "Start Creating Now",
+      "link": "https://pollo.ai?ref=ytayndd",
+      "style": "primary"
+    },
+    "secondaryCta": {
+      "text": "View Examples",
+      "link": "#showcase",
+      "style": "secondary"
+    },
+    "backgroundImage": "/images/backgrounds/earth-hero.webp",
+    "badges": [
+      "60-Second Processing",
+      "AI-Powered",
+      "4K Quality",
+      "No Watermark"
+    ]
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need to create stunning Earth zoom videos",
+    "items": [
+      {
+        "id": "landmark-transition",
+        "title": "Landmark Transition",
+        "description": "From street view to satellite perspective with smooth, cinematic transitions that captivate your audience.",
+        "icon": "map-pin",
+        "image": "/images/showcase/landmark-transition.webp",
+        "benefits": [
+          "Smooth zoom transitions",
+          "Accurate geolocation",
+          "Multiple zoom levels"
+        ]
+      },
+      {
+        "id": "creative-effects",
+        "title": "Creative Effects",
+        "description": "Artistic zoom sequences with customizable styles and effects to match your creative vision.",
+        "icon": "sparkles",
+        "image": "/images/showcase/creative-effects.webp",
+        "benefits": [
+          "Multiple visual styles",
+          "Custom color grading",
+          "Professional effects"
+        ]
+      },
+      {
+        "id": "advanced-features",
+        "title": "Advanced Features",
+        "description": "Professional-grade zoom capabilities with high-resolution output and advanced customization options.",
+        "icon": "settings",
+        "image": "/images/showcase/advanced-features.webp",
+        "benefits": [
+          "4K resolution output",
+          "Batch processing",
+          "API integration"
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "title": "See It In Action",
+    "subtitle": "Discover the magic of Earth zoom technology through real examples",
+    "items": [
+      {
+        "id": "urban-landscape",
+        "title": "Urban Landscape Zoom",
+        "description": "Watch as we zoom out from a bustling city street to reveal the entire metropolitan area from space.",
+        "image": "/images/showcase/urban-landscape.webp",
+        "video": "/videos/showcase/urban-zoom.mp4",
+        "category": "Urban",
+        "duration": "15s"
+      },
+      {
+        "id": "natural-wonder",
+        "title": "Natural Wonder",
+        "description": "Experience the breathtaking transition from ground level to satellite view of natural landmarks.",
+        "image": "/images/showcase/natural-wonder.webp",
+        "video": "/videos/showcase/nature-zoom.mp4",
+        "category": "Nature",
+        "duration": "20s"
+      },
+      {
+        "id": "architectural-marvel",
+        "title": "Architectural Marvel",
+        "description": "Showcase iconic buildings and structures with dramatic zoom-out sequences.",
+        "image": "/images/showcase/architecture.webp",
+        "video": "/videos/showcase/architecture-zoom.mp4",
+        "category": "Architecture",
+        "duration": "18s"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "What Our Users Say",
+    "subtitle": "Join thousands of creators who trust ZOOM EARTH AI",
+    "items": [
+      {
+        "id": "sarah-content-creator",
+        "name": "Sarah Chen",
+        "role": "Content Creator",
+        "avatar": "/images/avatars/sarah.webp",
+        "rating": 5,
+        "content": "This tool has revolutionized my content creation process. The zoom effects are incredibly smooth and professional-looking. My engagement rates have increased by 300%!",
+        "platform": "YouTube",
+        "followers": "2.5M"
+      },
+      {
+        "id": "mike-filmmaker",
+        "name": "Mike Rodriguez",
+        "role": "Filmmaker",
+        "avatar": "/images/avatars/mike.webp",
+        "rating": 5,
+        "content": "As a professional filmmaker, I'm impressed by the quality and ease of use. The AI technology produces results that would take hours to create manually.",
+        "platform": "Instagram",
+        "followers": "850K"
+      },
+      {
+        "id": "emma-educator",
+        "name": "Emma Thompson",
+        "role": "Educator",
+        "avatar": "/images/avatars/emma.webp",
+        "rating": 5,
+        "content": "Perfect for educational content! My students are more engaged when I use these zoom effects to explain geography and environmental concepts.",
+        "platform": "TikTok",
+        "followers": "1.2M"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about ZOOM EARTH AI",
+    "items": [
+      {
+        "id": "what-is-zoom-earth-ai",
+        "question": "What is ZOOM EARTH AI?",
+        "answer": "ZOOM EARTH AI is an advanced AI-powered tool that creates stunning cinematic zoom-out sequences from your photos. It transforms any image into a dramatic video that zooms from ground level to space, showing the Earth from a satellite perspective."
+      },
+      {
+        "id": "how-does-it-work",
+        "question": "How does the AI technology work?",
+        "answer": "Our AI analyzes your uploaded photo to identify the location and creates a seamless zoom-out sequence using satellite imagery and advanced computer vision. The process combines multiple data sources to generate smooth, realistic transitions."
+      },
+      {
+        "id": "processing-time",
+        "question": "How long does it take to process a video?",
+        "answer": "Most videos are processed within 30-60 seconds, depending on the complexity and desired output quality. Our AI infrastructure is optimized for speed without compromising quality."
+      },
+      {
+        "id": "supported-formats",
+        "question": "What image formats are supported?",
+        "answer": "We support all major image formats including JPEG, PNG, WebP, and HEIC. For best results, we recommend high-resolution images (at least 1080p) with clear geographical features."
+      },
+      {
+        "id": "output-quality",
+        "question": "What's the output video quality?",
+        "answer": "Our AI generates videos in up to 4K resolution (3840x2160) at 30fps. You can choose from multiple quality options including 1080p, 2K, and 4K based on your needs."
+      },
+      {
+        "id": "commercial-use",
+        "question": "Can I use the videos commercially?",
+        "answer": "Yes! All videos created with ZOOM EARTH AI come with full commercial usage rights. You can use them in your marketing campaigns, social media content, presentations, and more without any restrictions."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Create Amazing Earth Zoom Videos?",
+    "subtitle": "Join thousands of creators who are already using ZOOM EARTH AI to captivate their audiences",
+    "primaryButton": {
+      "text": "Start Creating Now",
+      "link": "https://pollo.ai?ref=ytayndd"
+    },
+    "secondaryButton": {
+      "text": "Watch Demo",
+      "link": "#demo"
+    },
+    "features": [
+      "No credit card required",
+      "60-second processing",
+      "4K quality output",
+      "Commercial license included"
+    ]
+  }
+}

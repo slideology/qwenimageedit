@@ -1,0 +1,50 @@
+{
+  "siteName": "ZOOM EARTH AI",
+  "logo": "/favicon.ico",
+  "favicon": "/favicon.ico",
+  "brandColor": "#6366f1",
+  "hero": {
+    "title": "ZOOM EARTH AI",
+    "subtitle": "Transform your photos into stunning cinematic zoom-out sequences from Earth to space. Create viral-worthy content in seconds.",
+    "ctaText": "Start Creating Now",
+    "ctaLink": "https://pollo.ai?ref=ytayndd",
+    "bgImage": ""
+  },
+  "features": [
+    {
+      "title": "Landmark Transition",
+      "desc": "From street view to satellite perspective",
+      "image": "/images/showcase/landmark-transition.webp"
+    },
+    {
+      "title": "Creative Effects",
+      "desc": "Artistic zoom sequences with style",
+      "image": "/images/showcase/creative-effects.webp"
+    },
+    {
+      "title": "Advanced Features",
+      "desc": "Professional-grade zoom capabilities",
+      "image": "/images/showcase/advanced-features.webp"
+    }
+  ],
+  "nav": [
+    { "label": "Features", "href": "#features" },
+    { "label": "Showcase", "href": "#showcase" },
+    { "label": "Reviews", "href": "#reviews" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "footer": {
+    "copyright": "© 2025 ZOOM EARTH AI. All rights reserved.",
+    "social": [
+      { "type": "youtube", "url": "https://youtube.com/@zoomearthai" },
+      { "type": "twitter", "url": "https://twitter.com/zoomearthai" },
+      { "type": "tiktok", "url": "https://tiktok.com/@zoomearthai" }
+    ],
+    "desc": "Transform your content with stunning Earth zoom effects. Create professional-quality videos in minutes."
+  },
+  "seo": {
+    "title": "ZOOM EARTH AI - Intelligent Earth Zoom and Video Generation Tool",
+    "description": "Explore every corner of Earth with ZOOM EARTH AI. Our AI-driven technology enables you to create stunning earth zoom videos for education, presentations, and creative projects.",
+    "keywords": "earth zoom, ai video, cinematic, satellite, creative, education, viral content"
+  }
+} 
